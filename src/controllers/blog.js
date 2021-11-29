@@ -1,20 +1,33 @@
 // 处理方法
+const {execSQL} =require('../db/mysql')
 
-const getList = (id,name) => {
-    // 从数据库拿数据
-    return [
-        {
-            id: '15564',
-            name: "asd",
-            age: 15
-        },
-        {
-            id: '11264',
-            name: "a221sd",
-            age: 18
-        }
-    ]
+// 从数据库user  list
+const getList = (id) => {
+    let sql =`select * from user where 1=1 ` ;
+
+    if(id){
+        sql += `and user_id='${id}'`
+    }
+    // if(name){
+    //     sql += `and user_name='${name}'`
+    // }
+    console.log("getList--sql:",sql);
+    return execSQL(sql);
 }
+
+//获取文章
+const getArt=(id)=>{
+    let sql =`select * from article where 1=1 ` ;
+
+    if(id){
+        sql += `and title_id='${id}'`
+    }
+   
+    console.log("getArt--sql:",sql);
+    return execSQL(sql);
+}   
+
+
 module.exports={
-    getList
+    getList,getArt
 }

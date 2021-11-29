@@ -1,12 +1,7 @@
 const mysql = require('mysql')
+const {MYSQL_CONFIG}=require('../config/db')
 //创建连接对象  
-const connection = mysql.createConnection({
-    hots: 'localhost',
-    user: 'root',
-    password: 'root',
-    port: 3306,
-    database: 'blogre'
-});
+const connection = mysql.createConnection(MYSQL_CONFIG);
 
 // 开始连接  
 connection.connect();
@@ -24,8 +19,22 @@ connection.connect();
 // connection.end();
 
 // 封装函数
-function execSQL(sql,callback){
-    connection.query(sql,callback)
+// function execSQL(sql,callback){
+//     connection.query(sql,callback)
+// }
+function execSQL(sql){
+    const promise=new Promise((resolve,reject)=>{
+        connection.query(sql,(err,result)=>{
+            if(err){
+                reject(err);
+                return;
+            }else{
+                resolve(result);
+            }
+        })
+    })
+    return promise;
+
 }
 
 // 导出

@@ -46,14 +46,16 @@ const serverHandler = (req, res) => {
         // console.log("获取post内容",postDate);
         req.body = postDate;
 
-        //路由功能
-        const routeData = handleRoute(req, res);
-        if (routeData) {
-            res.end(JSON.stringify(routeData));
+        //路由功能 给路由传参  
+        const routeDataPromise = handleRoute(req, res);
+        if (routeDataPromise) {
+            routeDataPromise.then((routeData)=>{ 
+                res.end(JSON.stringify(routeData)); //返回数据
+            })
             return;
         }
         //404
-        
+
         res.writeHead(404, { 'COntent-Type': 'text/plain' });
         res.write('404 Not Found');
         res.end();

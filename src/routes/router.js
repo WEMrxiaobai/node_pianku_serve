@@ -1,31 +1,27 @@
 //处理路由
 const {SuccessModel} =require('../model/responseModel')
-const {getList}=require('../controllers/blog')
-const {execSQL} =require('../db/mysql')
+const {getList,getArt} =require('../controllers/blog')
 const handleRoute = (req, res) => {
 
-    const method = req.method
-
+    const method = req.method //获得方法
+    const id=req.query.id ||'';
+    const name=req.query.name || '';
     // 判断路由
     if (method === 'GET' && req.path === '/api/list') {
-        // const id=req.query.id || '';
-        // const name=req.query.name || '';
-        const sql=`select user_id from user`;
-        let databack='';
-        execSQL(sql,(err,result)=>{
-            if(err){
-                console.error('error',err);
-                return ;
-            }
-            console.log("数据result:",databack);
-            databack=result
-            console.log("databack回调1" ,databack);
+        // 用户列表 id
+        const listDataPromise=getList(id);
+        return listDataPromise.then((listData) =>{
+            return new SuccessModel(listData);
         })
-        console.log("databack" ,databack);
-        return new SuccessModel(databack)
         
-        
-        
+    }
+
+    if (method === 'GET' && req.path === '/api/art') {
+        //文章 id
+        const listDataPromise=getArt(id);
+        return listDataPromise.then((listData) =>{
+            return new SuccessModel(listData);
+        })
     }
     if (method === 'POST' && req.path === '/api/new') {
         console.log("body",req.body,new Date());
