@@ -26,8 +26,32 @@ const getArt=(id)=>{
     console.log("getArt--sql:",sql);
     return execSQL(sql);
 }   
-
+// 添加用户
+const insertUser=(reqbody)=>{
+    console.log("reqbody:",reqbody);
+    const user_name=reqbody.name;
+    const email=reqbody.email;
+    const user_password=reqbody.password;
+    let sql =`INSERT INTO user ( user_name, email, user_password) VALUES ( '${user_name}', '${email}', '${user_password}');` ;
+   
+    console.log("insertUser--sql:",sql);
+    
+    return execSQL(sql).then(mysqlbackMsg=>{
+        // console.log('blogre下的insertedResult',insertedResult);
+        //insertedResult  mysql 中的catch return
+        if(mysqlbackMsg.insertId){
+            //成功添加状态
+            return {
+                id: mysqlbackMsg.insertId,
+                add:true
+            }
+        }else{
+            return {'error':mysqlbackMsg}
+        }
+    });
+   
+}
 
 module.exports={
-    getList,getArt
+    getList,getArt,insertUser
 }

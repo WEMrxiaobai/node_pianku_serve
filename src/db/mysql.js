@@ -1,43 +1,39 @@
 const mysql = require('mysql')
-const {MYSQL_CONFIG}=require('../config/db')
+const { MYSQL_CONFIG } = require('../config/db')
 //创建连接对象  
 const connection = mysql.createConnection(MYSQL_CONFIG);
 
 // 开始连接  
 connection.connect();
-// 执行sql 语句
-// const sql = `select * from user`;
-// connection.query(sql, (err, result) => {
-//     if (err) {
-//         console.error('error', err);
-//         return;
-//     }
-//     console.log('result', result);
-// })
-
-// //关闭连接
-// connection.end();
-
-// 封装函数
-// function execSQL(sql,callback){
-//     connection.query(sql,callback)
-// }
-function execSQL(sql){
-    const promise=new Promise((resolve,reject)=>{
-        connection.query(sql,(err,result)=>{
-            if(err){
+let errMsg = '';
+function execSQL(sql) {
+    return new Promise((resolve, reject) => {
+        connection.query(sql, (err, result) => {
+            if (err) {
+                // 返回err信息
+                errMsg = {
+                    'code': err.code,
+                    'errno': err.errno,
+                    'sqlMessage': err.sqlMessage,
+                    'sqlState': err.sqlState
+                };
                 reject(err);
                 return;
-            }else{
+            } else {
                 resolve(result);
+                //正常执行
             }
         })
+    }).catch(() => {
+        // 对catch处理
+        console.log("执行sql 错误信息 errorMsg", errMsg);
+        return errMsg ;
+
     })
-    return promise;
 
 }
 
 // 导出
-module.exports={
+module.exports = {
     execSQL
 }
