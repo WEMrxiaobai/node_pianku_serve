@@ -4,9 +4,7 @@ class BaseModel {
             this.message=data;
             data=null;
             message=null;
-
         }
-
         if(data){
             this.data=data
         }

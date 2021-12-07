@@ -8,6 +8,7 @@ MYSQL_CONFIG={
     port: 3306,
     database: 'maccms'
 }
+
 module.exports={
     MYSQL_CONFIG
 }

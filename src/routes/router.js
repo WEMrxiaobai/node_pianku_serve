@@ -1,26 +1,75 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, getArt, insertUser } = require('../controllers/blog')
-const {getIndexMv} =require('../controllers/video')
+const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv} =require('../controllers/video')
+const {Urlreg} =require('../model/Urlreg')
 const handleRoute = (req, res) => {
 
     const method = req.method //获得方法
     const id = req.query.id || '';
     const page=req.query.page || 14;
-    const comments=req.query.comments || '';
-    // 判断路由
+    // 判断路由 
+    //首页 电影推荐   
     if (method === 'GET' && req.path === '/api/index/mv') {
-        //首页 电影推荐   
+       
         const indexMvPromise = getIndexMv(page);
-        return indexMvPromise.then((mvdata) => {
-            if (mvdata) {
-                return new SuccessModel(mvdata);
+        return indexMvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
             } else {
-                return new ErrorModel(mvdata);
+                return new ErrorModel(data);
+            }
+        })
+    }
+    //首页 电视剧推荐   
+    if (method === 'GET' && req.path === '/api/index/tv') {
+        
+        const indexTvPromise = getIndexTv(page);
+        return indexTvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+    //首页 综艺 推荐  
+    if (method === 'GET' && req.path === '/api/index/va') {
+        const indexVaPromise = getIndexVa(page);
+        return indexVaPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+    //首页 动漫 推荐  
+    if (method === 'GET' && req.path === '/api/index/ac') {
+        const indexACPromise = getIndexAC(page);
+        return indexACPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
             }
         })
     }
 
+    //电影页 
+    if (method === 'GET' && req.path === '/api/mv') {
+        const MvPromise = getMv(42);
+        return MvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+
+
+    
     if (method === 'GET' && req.path === '/api/list') {
         // 用户列表 id
         const listDataPromise = getList(id);

@@ -2,18 +2,74 @@
 const {execSQL} =require('../db/mysql')
 
 // 从数据库user  list
+// 首页电影推荐
 const getIndexMv = (page) => {
-    // 首页电影推荐
+    
     let sql =`select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1 `;
     if(page){
-        sql+=` and type_id_1='1' `
+        sql+=` and type_id_1='1' `;
+        sql+= `ORDER BY mac_vod.vod_time_add DESC`
         sql += ` LIMIT ${page}`;
     }
     console.log("getList--sql:",sql);
     return execSQL(sql);
 }
+// 首页电视剧推荐
+const getIndexTv = (page) => {
+    let sql =`select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1 `;
+    if(page){
+        sql+=` and type_id_1='2' `
+        sql += ` LIMIT ${page}`;
+    }
+    console.log("getList--sql:",sql);
+    return execSQL(sql);
+}
+// 首页综艺推荐
+const getIndexVa = (page) => {
+    let sql =`select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1 `;
+    if(page){
+        sql+=` and type_id='3' `;
+        sql+= `ORDER BY mac_vod.vod_time_add DESC`
+        sql += ` LIMIT ${page}`;
+    }
+    console.log("getList--sql:",sql);
+    return execSQL(sql);
+}
+
+// 首页动漫推荐
+const getIndexAC = (page) => {
+    let sql =`select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1 `;
+    if(page){
+        sql+=` and type_id='4' `;
+        sql+= `ORDER BY mac_vod.vod_time_add DESC`
+        sql += ` LIMIT ${page}`;
+    }
+    console.log("getList--sql:",sql);
+    return execSQL(sql);
+}
+
+// 电影页
+const getMv = (page) => {
+    let sql =`select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where `;
+    if(page){
+        sql+=` type_id_1='1'`
+        sql+= `ORDER BY mac_vod.vod_time_add DESC`
+        sql += ` LIMIT ${page}`;
+    }
+    console.log("getList--sql:",sql);
+    return execSQL(sql);
+}
+
 
 //获取文章
 const getArt=(id)=>{
@@ -53,5 +109,6 @@ const insertUser=(reqbody)=>{
 }
 
 module.exports={
-    getIndexMv,getArt,insertUser
+    getIndexMv,getIndexTv,getIndexVa,getArt,insertUser,getIndexAC,
+    getMv
 }
