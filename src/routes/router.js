@@ -1,11 +1,26 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, getArt, insertUser } = require('../controllers/blog')
+const {getIndexMv} =require('../controllers/video')
 const handleRoute = (req, res) => {
 
     const method = req.method //获得方法
     const id = req.query.id || '';
+    const page=req.query.page || 14;
+    const comments=req.query.comments || '';
     // 判断路由
+    if (method === 'GET' && req.path === '/api/index/mv') {
+        //首页 电影推荐   
+        const indexMvPromise = getIndexMv(page);
+        return indexMvPromise.then((mvdata) => {
+            if (mvdata) {
+                return new SuccessModel(mvdata);
+            } else {
+                return new ErrorModel(mvdata);
+            }
+        })
+    }
+
     if (method === 'GET' && req.path === '/api/list') {
         // 用户列表 id
         const listDataPromise = getList(id);
@@ -19,13 +34,7 @@ const handleRoute = (req, res) => {
 
     }
 
-    if (method === 'GET' && req.path === '/api/art') {
-        //文章 id
-        const listDataPromise = getArt(id);
-        return listDataPromise.then((listData) => {
-            return new SuccessModel(listData);
-        })
-    }
+   
     if (method === 'POST' && req.path === '/api/new') {
         // 添加用户
         // console.log("body", req.body, new Date());

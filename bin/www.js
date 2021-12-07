@@ -3,14 +3,38 @@ const http =require('http');
 
 const serverHandler=require('../app');
 
-const PORT=5000;
+const PORT=5200;
 
 const server=http.createServer(serverHandler)
+console.log([
+    "                   _ooOoo_",
+    "                  o8888888o",
+    "                  88\" . \"88",
+    "                  (| -_- |)",
+    "                  O\\  =  /O",
+    "               ____/`---'\\____",
+    "             .'  \\\\|     |//  `.",
+    "            /  \\\\|||  :  |||//  \\",
+    "           /  _||||| -:- |||||-  \\",
+    "           |   | \\\\\\  -  /// |   |",
+    "           | \\_|  ''\\---/''  |   |",
+    "           \\  .-\\__  `-`  ___/-. /",
+    "         ___`. .'  /--.--\\  `. . __",
+    "      .\"\" '<  `.___\\_<|>_/___.'  >'\"\".",
+    "     | | :  `- \\`.;`\\ _ /`;.`/ - ` : | |",
+    "     \\  \\ `-.   \\_ __\\ /__ _/   .-` /  /",
+    "======`-.____`-.___\\_____/___.-`____.-'======",
+    "                   `=---='",
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "              佛祖保佑         永无BUG            "
+].join('\n'));
 
 server.listen(PORT,()=>{
     console.log("server开启,端口号：",PORT);
 })
 
+
+// 地址获取
 function getIPAdress() {
     var interfaces = require('os').networkInterfaces();　　
     for (var devName in interfaces) {　　　　

@@ -6,7 +6,7 @@ MYSQL_CONFIG={
     user: 'root',
     password: 'root',
     port: 3306,
-    database: 'blogre'
+    database: 'maccms'
 }
 module.exports={
     MYSQL_CONFIG

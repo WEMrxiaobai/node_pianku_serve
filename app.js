@@ -34,8 +34,14 @@ const getPostData = (req) => {
 
 const serverHandler = (req, res) => {
     //设置响应格式
-    res.setHeader('Content-Type', 'application/json');
+    //配置请求的域名，*代表任意
+    res.setHeader("Access-Control-Allow-Origin", "*");   
+    // 支持跨域请求类型
+    res.setHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");  
+    //配置请求头信息，包含字符集等等 
+    res.setHeader('Content-Type', 'application/json;charset=utf-8');
     // console.log("请求:",req.headers);
+    
     const url = req.url
     req.path = url.split("?")[0];
 
