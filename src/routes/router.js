@@ -1,7 +1,7 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, getArt, insertUser } = require('../controllers/blog')
-const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv} =require('../controllers/video')
+const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getTv,getVa,getAc,getDoc} =require('../controllers/video')
 const {Urlreg} =require('../model/Urlreg')
 const handleRoute = (req, res) => {
 
@@ -68,8 +68,57 @@ const handleRoute = (req, res) => {
         })
     }
 
+    //电视剧 
+    if (method === 'GET' && req.path === '/api/tv') {
+        const MvPromise = getTv(42);
+        return MvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
 
+    //综艺 
+    if (method === 'GET' && req.path === '/api/va') {
+        const MvPromise = getVa(42);
+        return MvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+
+    //动漫
+    if (method === 'GET' && req.path === '/api/ac') {
+        const MvPromise = getAc(42);
+        return MvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
     
+    //纪录片
+    if (method === 'GET' && req.path === '/api/doc') {
+        const MvPromise = getDoc(42);
+        return MvPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+
+
+
+
     if (method === 'GET' && req.path === '/api/list') {
         // 用户列表 id
         const listDataPromise = getList(id);

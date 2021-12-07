@@ -1,0 +1,160 @@
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 20:56:05
+Log:function toString() { [native code] }Time:2021-12-07 20:56:55
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 20:57:36
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='2'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:05:44
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:05:51
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='4'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:05:58
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='4'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:06:07
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='21'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:07:07
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:07:13
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  LIMIT 14Time:2021-12-07 21:07:13
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:07:13
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:07:13
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:07:13
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='2'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:08:37
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:09:25
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:10:59
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:20
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  LIMIT 14Time:2021-12-07 21:12:21
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:21
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:21
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:59
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  LIMIT 14Time:2021-12-07 21:12:59
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:59
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:12:59
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:15:17
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:15:22
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:16:19
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:16:33
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:16:34
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:19:12
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:19:25
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:19:33
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:19:49
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:21:26
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:21:36
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:21:46
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:22:19
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:22:31
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='21'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:30
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:38
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='2'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:42
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='3'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:44
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='4'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:46
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id='21'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:49
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:23:52
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  LIMIT 14Time:2021-12-07 21:23:52
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:23:53
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:23:53
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:23:56
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where  type_id_1='1'ORDER BY mac_vod.vod_time_add DESC LIMIT 42Time:2021-12-07 21:24:30
+Log:select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:24:41
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  LIMIT 14Time:2021-12-07 21:24:41
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:24:41
+Log:select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4' ORDER BY mac_vod.vod_time_add DESC LIMIT 14Time:2021-12-07 21:24:41

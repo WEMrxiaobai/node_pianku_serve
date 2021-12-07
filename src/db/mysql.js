@@ -5,11 +5,21 @@ var connection = mysql.createConnection(MYSQL_CONFIG);
 
 // 开始连接  
 connection.connect();
-// 重新连接
-connection.on('error',err=>{
-    console.log("重新连接:re_connecting lost connection");
-    connection= mysql.createConnection(MYSQL_CONFIG);
-})
+
+function Re_connection() {
+    // 重新连接
+    console.log("执行on");
+    connection.on('error', err => {
+        console.log("重新连接:re_connecting lost connection");
+        connection = mysql.createConnection(MYSQL_CONFIG);
+        setTimeout(() => {
+            Re_connection()
+        }, 200000);
+    })
+}
+Re_connection();
+
+
 let errMsg = '';
 
 function execSQL(sql) {
@@ -33,7 +43,7 @@ function execSQL(sql) {
     }).catch(() => {
         // 对catch处理
         console.log("执行sql 错误信息 errorMsg", errMsg);
-        return errMsg ;
+        return errMsg;
 
     })
 
@@ -43,3 +53,4 @@ function execSQL(sql) {
 module.exports = {
     execSQL
 }
+
