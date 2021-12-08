@@ -140,9 +140,8 @@ const getDoc = (page) => {
 
 // getID 获取影片详情
 const getID = (id) => {
-    let backdata={};
     let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,
-    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration
      from mac_vod where `;
     if (id) {
         sql += ` vod_id='${id}'`
@@ -167,7 +166,7 @@ const getID = (id) => {
 // getHot 获取当前类型热榜
 const getHot = (type_id_1) => {
     let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='${type_id_1}' ORDER BY vod_score_all desc LIMIT 6 ;  `;
+    from mac_vod where type_id='${type_id_1}' ORDER BY vod_hits desc LIMIT 8 ;  `;
     // console.log("getList--sql:",sql);
     log(sql)
     return execSQL(sql);
@@ -175,7 +174,7 @@ const getHot = (type_id_1) => {
 // getHot 获取当前类型相关
 const getAbout = (type_id) => {
     let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='${type_id}' ORDER BY vod_hits desc LIMIT 8 ;  `;
+    from mac_vod where type_id='${type_id}' ORDER BY vod_score_all desc LIMIT 6 ;  `;
     // console.log("getList--sql:",sql);
     log(sql)
     return execSQL(sql);
