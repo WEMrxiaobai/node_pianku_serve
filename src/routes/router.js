@@ -1,13 +1,15 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, getArt, insertUser } = require('../controllers/blog')
-const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getTv,getVa,getAc,getDoc} =require('../controllers/video')
+const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getTv,getVa,getAc,getDoc,getID,getHot,getAbout} =require('../controllers/video')
 const {Urlreg} =require('../model/Urlreg')
 const handleRoute = (req, res) => {
 
     const method = req.method //获得方法
     const id = req.query.id || '';
     const page=req.query.page || 14;
+    const type_id=req.query.type_id || '';
+    const type_id_1=req.query.type_id_1 || '';
     // 判断路由 
     //首页 电影推荐   
     if (method === 'GET' && req.path === '/api/index/mv') {
@@ -70,8 +72,8 @@ const handleRoute = (req, res) => {
 
     //电视剧 
     if (method === 'GET' && req.path === '/api/tv') {
-        const MvPromise = getTv(42);
-        return MvPromise.then((data) => {
+        const TvPromise = getTv(42);
+        return TvPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
             } else {
@@ -82,8 +84,8 @@ const handleRoute = (req, res) => {
 
     //综艺 
     if (method === 'GET' && req.path === '/api/va') {
-        const MvPromise = getVa(42);
-        return MvPromise.then((data) => {
+        const vaPromise = getVa(42);
+        return vaPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
             } else {
@@ -94,8 +96,8 @@ const handleRoute = (req, res) => {
 
     //动漫
     if (method === 'GET' && req.path === '/api/ac') {
-        const MvPromise = getAc(42);
-        return MvPromise.then((data) => {
+        const acPromise = getAc(42);
+        return acPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
             } else {
@@ -106,8 +108,8 @@ const handleRoute = (req, res) => {
     
     //纪录片
     if (method === 'GET' && req.path === '/api/doc') {
-        const MvPromise = getDoc(42);
-        return MvPromise.then((data) => {
+        const docPromise = getDoc(42);
+        return docPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
             } else {
@@ -116,7 +118,40 @@ const handleRoute = (req, res) => {
         })
     }
 
+    //id 获取电影详情
+     if (method === 'GET' && req.path === '/api/id') {
+        const movidPromise = getID(id);
+        return movidPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
 
+    // 获取当前类型热榜
+    if (method === 'GET' && req.path === '/api/hot') {
+        const hotPromise = getHot(type_id_1);
+        return hotPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+    // 获取显示电影相关推荐
+    if (method === 'GET' && req.path === '/api/about') {
+        const aboutPromise = getAbout(type_id);
+        return aboutPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
 
 
     if (method === 'GET' && req.path === '/api/list') {
