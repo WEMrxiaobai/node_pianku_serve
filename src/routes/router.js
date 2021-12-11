@@ -1,20 +1,41 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
-const { getList, getArt, insertUser } = require('../controllers/blog')
-const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getTv,getVa,getAc,getDoc,getID,getHot,getAbout} =require('../controllers/video')
+const { getList, insertUser } = require('../controllers/blog')
+const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,
+      getTv,getVa,getAc,getDoc,getID,getHot,getAbout,getBanner} =require('../controllers/video')
 const {Urlreg} =require('../model/Urlreg')
 const handleRoute = (req, res) => {
-
+    
     const method = req.method //获得方法
-    const id = req.query.id || '';
-    const page=req.query.page || 14;
-    const type_id=req.query.type_id || '';
+    const id = req.query.id || ''; //id
+    const page=(req.query.page || 1)-1;   //页数   初始值为0   
+    const lisNum=req.query.lisNum || 14; //主页推荐显示条数
+    var type=['全部','全部','全部','全部','time'];
+    // console.log("-----req.query.type:",req.query.type);
+    if(req.query.type!=undefined){
+        // console.log("type:",type,typeof(type));
+        type=JSON.parse(req.query.type); //显示类型 筛选功能  字符串转换为对象
+    }
+    const type_id=req.query.type_id || '';  
     const type_id_1=req.query.type_id_1 || '';
+    const showNum=42; //mv页显示条数
     // 判断路由 
-    //首页 电影推荐   
+    //首页 banner
+    if (method === 'GET' && req.path === '/api/index/banner') {
+       
+        const indexBannerPromise = getBanner(6);
+        return indexBannerPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+    //首页 电影推荐
     if (method === 'GET' && req.path === '/api/index/mv') {
        
-        const indexMvPromise = getIndexMv(page);
+        const indexMvPromise = getIndexMv(lisNum);
         return indexMvPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -26,7 +47,7 @@ const handleRoute = (req, res) => {
     //首页 电视剧推荐   
     if (method === 'GET' && req.path === '/api/index/tv') {
         
-        const indexTvPromise = getIndexTv(page);
+        const indexTvPromise = getIndexTv(lisNum);
         return indexTvPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -37,7 +58,7 @@ const handleRoute = (req, res) => {
     }
     //首页 综艺 推荐  
     if (method === 'GET' && req.path === '/api/index/va') {
-        const indexVaPromise = getIndexVa(page);
+        const indexVaPromise = getIndexVa(lisNum);
         return indexVaPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -48,7 +69,7 @@ const handleRoute = (req, res) => {
     }
     //首页 动漫 推荐  
     if (method === 'GET' && req.path === '/api/index/ac') {
-        const indexACPromise = getIndexAC(page);
+        const indexACPromise = getIndexAC(lisNum);
         return indexACPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -60,9 +81,10 @@ const handleRoute = (req, res) => {
 
     //电影页 
     if (method === 'GET' && req.path === '/api/mv') {
-        const MvPromise = getMv(42);
+        const MvPromise = getMv(showNum,page,type);
         return MvPromise.then((data) => {
             if (data) {
+                // console.log(Urlreg(data));
                 return new SuccessModel(Urlreg(data));
             } else {
                 return new ErrorModel(data);
@@ -72,7 +94,7 @@ const handleRoute = (req, res) => {
 
     //电视剧 
     if (method === 'GET' && req.path === '/api/tv') {
-        const TvPromise = getTv(42);
+        const TvPromise = getTv(showNum,page,type);
         return TvPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -84,7 +106,7 @@ const handleRoute = (req, res) => {
 
     //综艺 
     if (method === 'GET' && req.path === '/api/va') {
-        const vaPromise = getVa(42);
+        const vaPromise = getVa(showNum,page,type);
         return vaPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -96,7 +118,7 @@ const handleRoute = (req, res) => {
 
     //动漫
     if (method === 'GET' && req.path === '/api/ac') {
-        const acPromise = getAc(42);
+        const acPromise = getAc(showNum,page,type);
         return acPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -108,7 +130,7 @@ const handleRoute = (req, res) => {
     
     //纪录片
     if (method === 'GET' && req.path === '/api/doc') {
-        const docPromise = getDoc(42);
+        const docPromise = getDoc(showNum,page,type);
         return docPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));

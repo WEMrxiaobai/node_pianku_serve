@@ -8,13 +8,13 @@ connection.connect();
 
 function Re_connection() {
     // 重新连接
-    console.log("执行on");
+    console.log("执行 连接检查" ,new Date());
     connection.on('error', err => {
-        console.log("重新连接:re_connecting lost connection");
+        console.log("重连mysql:re_connecting lost connection" ,new Date());
         connection = mysql.createConnection(MYSQL_CONFIG);
         setTimeout(() => {
             Re_connection()
-        }, 200000);
+        }, 120000);
     })
 }
 Re_connection();

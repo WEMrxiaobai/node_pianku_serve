@@ -4,8 +4,13 @@
         "dataurl",
         "movid",
         "mvdata",
+        "paixu",
         "reqbody",
+        "reurl",
+        "showtype",
+        "sqlback",
         "sqldata",
+        "sqltype",
         "tvdata",
         "Urlreg",
         "vadata"
