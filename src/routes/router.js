@@ -1,8 +1,8 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, insertUser } = require('../controllers/blog')
-const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,
-      getTv,getVa,getAc,getDoc,getID,getHot,getAbout,getBanner} =require('../controllers/video')
+const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getBanner,
+      getTv,getVa,getAc,getDoc,getID,getHot,getAbout,getPlayerVideo} =require('../controllers/video')
 const {Urlreg} =require('../model/Urlreg')
 const handleRoute = (req, res) => {
     
@@ -152,6 +152,17 @@ const handleRoute = (req, res) => {
         })
     }
 
+    //id 获取接口地址
+    if (method === 'GET' && req.path === '/api/video') {
+        const videoPromise = getPlayerVideo();
+        return videoPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(Urlreg(data));
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
     // 获取当前类型热榜
     if (method === 'GET' && req.path === '/api/hot') {
         const hotPromise = getHot(type_id_1);

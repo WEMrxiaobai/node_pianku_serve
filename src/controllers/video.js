@@ -166,8 +166,8 @@ const getDoc = (showNum, page, val) => {
 
 // getID 获取影片详情
 const getID = (id) => {
-    let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,
-    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl
+    let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
      from mac_vod where `;
     if (id) {
         sql += ` vod_id='${id}'`
@@ -188,6 +188,11 @@ const getID = (id) => {
     log(sql)
     return execSQL(sql);
 }
+// getPlayerVideo 获取播放影片信息
+const getPlayerVideo=()=>{
+    let sql = `SELECT * FROM video_api`;
+    return execSQL(sql)
+}
 
 // getHot 获取当前类型热榜
 const getHot = (type_id_1) => {
@@ -197,6 +202,7 @@ const getHot = (type_id_1) => {
     log(sql)
     return execSQL(sql);
 }
+
 // getHot 获取当前类型相关
 const getAbout = (type_id) => {
     let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
@@ -205,7 +211,6 @@ const getAbout = (type_id) => {
     log(sql)
     return execSQL(sql);
 }
-
 
 //获取文章
 const getArt = (id) => {
@@ -370,7 +375,8 @@ function stripscript(s) {  //格式 RegExp("[在中间定义特殊过滤字符]"
 }
 module.exports = {
     getIndexMv, getIndexTv, getIndexVa, getArt, insertUser, getIndexAC,
-    getMv, getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getBanner
+    getMv, getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getBanner,getPlayerVideo
+
 }
 
 
