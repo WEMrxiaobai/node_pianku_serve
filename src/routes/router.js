@@ -1,28 +1,28 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
 const { getList, insertUser } = require('../controllers/blog')
-const {getIndexMv,getIndexTv,getIndexVa,getIndexAC,getMv,getBanner,
-      getTv,getVa,getAc,getDoc,getID,getHot,getAbout,getPlayerVideo} =require('../controllers/video')
-const {Urlreg} =require('../model/Urlreg')
+const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
+    getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video')
+const { Urlreg } = require('../model/Urlreg')
 const handleRoute = (req, res) => {
-    
+
     const method = req.method //获得方法
     const id = req.query.id || ''; //id
-    const page=(req.query.page || 1)-1;   //页数   初始值为0   
-    const lisNum=req.query.lisNum || 14; //主页推荐显示条数
-    var type=['全部','全部','全部','全部','time'];
+    const page = (req.query.page || 1) - 1;   //页数   初始值为0   
+    const lisNum = req.query.lisNum || 14; //主页推荐显示条数
+    var type = ['全部', '全部', '全部', '全部', 'time'];
     // console.log("-----req.query.type:",req.query.type);
-    if(req.query.type!=undefined){
+    if (req.query.type != undefined) {
         // console.log("type:",type,typeof(type));
-        type=JSON.parse(req.query.type); //显示类型 筛选功能  字符串转换为对象
+        type = JSON.parse(req.query.type); //显示类型 筛选功能  字符串转换为对象
     }
-    const type_id=req.query.type_id || '';  
-    const type_id_1=req.query.type_id_1 || '';
-    const showNum=42; //mv页显示条数
+    const type_id = req.query.type_id || '';
+    const type_id_1 = req.query.type_id_1 || '';
+    const showNum = 42; //mv页显示条数
     // 判断路由 
     //首页 banner
     if (method === 'GET' && req.path === '/api/index/banner') {
-       
+
         const indexBannerPromise = getBanner(6);
         return indexBannerPromise.then((data) => {
             if (data) {
@@ -34,7 +34,7 @@ const handleRoute = (req, res) => {
     }
     //首页 电影推荐
     if (method === 'GET' && req.path === '/api/index/mv') {
-       
+
         const indexMvPromise = getIndexMv(lisNum);
         return indexMvPromise.then((data) => {
             if (data) {
@@ -46,7 +46,7 @@ const handleRoute = (req, res) => {
     }
     //首页 电视剧推荐   
     if (method === 'GET' && req.path === '/api/index/tv') {
-        
+
         const indexTvPromise = getIndexTv(lisNum);
         return indexTvPromise.then((data) => {
             if (data) {
@@ -78,10 +78,9 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     //电影页 
     if (method === 'GET' && req.path === '/api/mv') {
-        const MvPromise = getMv(showNum,page,type);
+        const MvPromise = getMv(showNum, page, type);
         return MvPromise.then((data) => {
             if (data) {
                 // console.log(Urlreg(data));
@@ -91,10 +90,9 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     //电视剧 
     if (method === 'GET' && req.path === '/api/tv') {
-        const TvPromise = getTv(showNum,page,type);
+        const TvPromise = getTv(showNum, page, type);
         return TvPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -103,10 +101,9 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     //综艺 
     if (method === 'GET' && req.path === '/api/va') {
-        const vaPromise = getVa(showNum,page,type);
+        const vaPromise = getVa(showNum, page, type);
         return vaPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -115,10 +112,9 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     //动漫
     if (method === 'GET' && req.path === '/api/ac') {
-        const acPromise = getAc(showNum,page,type);
+        const acPromise = getAc(showNum, page, type);
         return acPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -127,10 +123,9 @@ const handleRoute = (req, res) => {
             }
         })
     }
-    
     //纪录片
     if (method === 'GET' && req.path === '/api/doc') {
-        const docPromise = getDoc(showNum,page,type);
+        const docPromise = getDoc(showNum, page, type);
         return docPromise.then((data) => {
             if (data) {
                 return new SuccessModel(Urlreg(data));
@@ -139,9 +134,8 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     //id 获取电影详情
-     if (method === 'GET' && req.path === '/api/id') {
+    if (method === 'GET' && req.path === '/api/id') {
         const movidPromise = getID(id);
         return movidPromise.then((data) => {
             if (data) {
@@ -151,8 +145,7 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
-    //id 获取接口地址
+    //播放获取接口地址
     if (method === 'GET' && req.path === '/api/video') {
         const videoPromise = getPlayerVideo();
         return videoPromise.then((data) => {
@@ -186,23 +179,9 @@ const handleRoute = (req, res) => {
         })
     }
 
+    // 用户注册 
+    if (method === 'POST' && req.path === '/api/register') {
 
-    if (method === 'GET' && req.path === '/api/list') {
-        // 用户列表 id
-        const listDataPromise = getList(id);
-        return listDataPromise.then((listData) => {
-            if (listData) {
-                return new SuccessModel(listData);
-            } else {
-                return new ErrorModel(listData);
-            }
-        })
-
-    }
-
-   
-    if (method === 'POST' && req.path === '/api/new') {
-        // 添加用户
         // console.log("body", req.body, new Date());
 
         const listDataPromise = insertUser(req.body);
@@ -216,13 +195,45 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
-    if (method === 'POST' && req.path === '/api/update') {
+    // 用户登录
+    if (method === 'POST' && req.path === '/api/login') {
         return {
-            msg: "获取update"
+            msg: ""
+        }
+    }
+    // 用户评论
+    if (method === 'POST' && req.path === '/api/comment') {
+        return {
+            msg: ""
+        }
+    }
+    // 用户密码修改
+    if (method === 'POST' && req.path === '/api/comment') {
+        return {
+            msg: ""
+        }
+    }
+    // 用户信息修改
+    if (method === 'POST' && req.path === '/api/comment') {
+        return {
+            msg: ""
         }
     }
 
+
+    //admin 管理员登录   验证   
+    if (method === 'POST' && req.path === '/admin/login') {
+        return {
+            msg: ""
+        }
+    }
+    //admin 主页信息显示  
+    if (method === 'POST' && req.path === '/admin/login') {
+        return {
+            msg: ""
+        }
+    }
+    // 影片新增  
 
 }
 module.exports = handleRoute;

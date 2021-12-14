@@ -11,7 +11,7 @@ const getBanner = (page) => {
      from mac_vod where 1=1 `;
     if (page) {
         sql += ` and type_id_1='1' `;
-        sql += `ORDER BY vod_hits DESC ,vod_time DESC`
+        sql += `ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC`
         sql += ` LIMIT ${page}`;
     }
     log(sql)
@@ -20,13 +20,13 @@ const getBanner = (page) => {
 
 // 首页电影推荐
 const getIndexMv = (page) => {
-
+    // vod_level 推荐等级
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1 `;
     if (page) {
         sql += ` and type_id_1='1' `;
-        sql += `ORDER BY mac_vod.vod_time DESC`
+        sql += ` ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC `
         sql += ` LIMIT ${page}`;
     }
     // console.log("mv-sql:",sql,);
@@ -85,7 +85,7 @@ const getMv = (showNum, page, val) => {
     let countSql = `SELECT COUNT(*) as total from mac_vod where  type_id_1='1' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'`;
+    from mac_vod where type_id_1='1'  `;
     sql += ` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
     sql += ` LIMIT ${startPage},${endPage} `;
