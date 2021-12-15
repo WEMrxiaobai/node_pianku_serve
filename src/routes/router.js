@@ -1,6 +1,5 @@
 //处理路由
 const { SuccessModel, ErrorModel } = require('../model/responseModel')
-const { getList, insertUser } = require('../controllers/blog')
 const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video')
 const { Urlreg } = require('../model/Urlreg')
@@ -181,9 +180,7 @@ const handleRoute = (req, res) => {
 
     // 用户注册 
     if (method === 'POST' && req.path === '/api/register') {
-
         // console.log("body", req.body, new Date());
-
         const listDataPromise = insertUser(req.body);
         // console.log("listDataPromise",listDataPromise);
         return listDataPromise.then((inserted) => {
@@ -219,7 +216,6 @@ const handleRoute = (req, res) => {
             msg: ""
         }
     }
-
 
     //admin 管理员登录   验证   
     if (method === 'POST' && req.path === '/admin/login') {

@@ -1,18 +1,18 @@
 const jwt = require('jsonwebtoken')
 const {secretKey,DesTime} =require('../config/config')
-
- function generateToken(uid, scope) {
-    console.log("uid:",uid,"scope:",scope);
+const { log } =require('../model/Log')
+ 
+function generateToken(uid, scope) {
     const token=jwt.sign(
         {uid,scope},
         secretKey,
         {expiresIn:DesTime}
     )
-        
-    return token
+    log("uid:"+uid,"scope:",scope,"token:",token)
+    return token    
 }
 
-// console.log("token:",generateToken("4564654",5));
+console.log("token:",generateToken("4564654",5));
 module.exports = {
     generateToken
 }

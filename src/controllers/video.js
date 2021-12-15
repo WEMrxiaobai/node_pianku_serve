@@ -1,6 +1,7 @@
 // 处理方法
 const { execSQL } = require('../db/mysql');
-const fs = require('fs');
+const { log } =require('../model/Log')
+
 // type_id 二级分类  包括顶级分类
 // type_id_1 指定顶级分类组 无顶级分类则为0  指向有子级分类的二级分类
 
@@ -30,6 +31,7 @@ const getIndexMv = (page) => {
         sql += ` LIMIT ${page}`;
     }
     // console.log("mv-sql:",sql,);
+    console.log(typeof(log));
     log(sql)
     return execSQL(sql);
 }
@@ -342,27 +344,6 @@ function sqlPaixu(type) {
     return paixu
 }
 
-let count = 0;
-//日志输出
-function log(msg) {
-    count++;
-    let logText = '';
-    let time = timeSc();
-    logText = count + "." + time + ":  " + msg + "\r\n";
-
-    fs.appendFile('test.log', logText, "utf8", function (err) {
-        if (err) {
-            throw new Error("追加数据失败");
-        } else {
-            console.log("log写入", time);
-        }
-    });
-}
-//时间转换
-function timeSc(time = +new Date()) {
-    var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
-    return date.toJSON().substr(0, 19).replace('T', ' ');
-}
 // 对接收字符进行过滤
 function stripscript(s) {  //格式 RegExp("[在中间定义特殊过滤字符]")
     var pattern = new RegExp("[%--`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]")      
