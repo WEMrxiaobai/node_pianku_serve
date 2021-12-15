@@ -1,5 +1,4 @@
 const mysql = require('mysql');
-const { log } =require('../model/Log')
 const { MYSQL_CONFIG } = require('../config/db');
 //创建连接对象  
 var connection = mysql.createConnection(MYSQL_CONFIG);
@@ -10,10 +9,8 @@ connection.connect();
 function Re_connection() {
     // 重新连接
     console.log("执行 连接检查" ,new Date());
-    log("执行 连接检查")
     connection.on('error', err => {
         console.log("重连mysql:re_connecting lost connection" ,new Date());
-        log("重连mysql:re_connecting lost connection")
         connection = mysql.createConnection(MYSQL_CONFIG);
         setTimeout(() => {
             Re_connection()
@@ -46,7 +43,6 @@ function execSQL(sql) {
     }).catch(() => {
         // 对catch处理
         console.log("执行sql 错误信息 errorMsg", errMsg);
-        log("执行sql 错误信息 errorMsg", errMsg)
         return errMsg;
 
     })

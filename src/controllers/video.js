@@ -216,7 +216,7 @@ const getAbout = (type_id) => {
 
 //获取文章
 const getArt = (id) => {
-    let sql = `select * from article where 1=1 `;
+    let sql = `select * from mac_art where 1=1 `;
 
     if (id) {
         sql += `and title_id='${id}'`

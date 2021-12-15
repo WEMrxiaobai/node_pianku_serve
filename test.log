@@ -1,828 +1,221 @@
-1.2021-12-15 12:27:11:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+1.2021-12-15 18:36:11:  uid:xiaobai,scope:,4297f44b13955235245b2497399d7a93,token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOiI0Mjk3ZjQ0YjEzOTU1MjM1MjQ1YjI0OTczOTlkN2E5MyIsImlhdCI6MTYzOTU2NDU3MSwiZXhwIjoxNjM5NjUwOTcxfQ.3VP8TkrgORx2nBmhSTSb12hjHgWjFCl1qb-sRGfX6eE
+1.2021-12-15 18:36:41:  uid:xiaobai,scope:,4297f44b13955235245b2497399d7a93,token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOiI0Mjk3ZjQ0YjEzOTU1MjM1MjQ1YjI0OTczOTlkN2E5MyIsImlhdCI6MTYzOTU2NDYwMSwiZXhwIjoxNjM5NjUxMDAxfQ.8Pvtgp9B8TQ5u29mi3Zo55CBzd8ifvsgSOFyAflX6YU
+1.2021-12-15 18:49:43:  uid:xiaobai,scope:,4297f44b13955235245b2497399d7a93,token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOiI0Mjk3ZjQ0YjEzOTU1MjM1MjQ1YjI0OTczOTlkN2E5MyIsImlhdCI6MTYzOTU2NTM4MywiZXhwIjoxNjM5NjUxNzgzfQ.KPJODlh9WgkCBaq3Dj4PgWLUw1UOpQGW63SoNf2ERV8
+1.2021-12-15 18:51:43:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+2.2021-12-15 18:51:43:  uid:xiaobai,scope:,4297f44b13955235245b2497399d7a93,token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOiI0Mjk3ZjQ0YjEzOTU1MjM1MjQ1YjI0OTczOTlkN2E5MyIsImlhdCI6MTYzOTU2NTUwMywiZXhwIjoxNjM5NjUxOTAzfQ.ZS5H3qFHg4WpnfDkl6O_-CKnnhvJOtCARK7QttkBOjo
+3.2021-12-15 18:51:43:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOiI0Mjk3ZjQ0YjEzOTU1MjM1MjQ1YjI0OTczOTlkN2E5MyIsImlhdCI6MTYzOTU2NTUwMywiZXhwIjoxNjM5NjUxOTAzfQ.ZS5H3qFHg4WpnfDkl6O_-CKnnhvJOtCARK7QttkBOjo
+1.2021-12-15 18:52:56:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+2.2021-12-15 18:52:56:  uid:xiaobai,scope:,1,token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTYzOTU2NTU3NiwiZXhwIjoxNjM5NjUxOTc2fQ.12-ejmb5j5GJBdtrq8MXJN6S7qO_Cbn45YGzljVZXGA
+3.2021-12-15 18:52:56:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTYzOTU2NTU3NiwiZXhwIjoxNjM5NjUxOTc2fQ.12-ejmb5j5GJBdtrq8MXJN6S7qO_Cbn45YGzljVZXGA
+1.2021-12-15 18:53:18:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+2.2021-12-15 18:53:18:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTYzOTU2NTU5OCwiZXhwIjoxNjM5NjUxOTk4fQ.GhDChYzAdvkillM4cBPRT7qbDO8Q-6bh8ZVkKUzz7Xo
+1.2021-12-15 19:48:54:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-2.2021-12-15 12:27:11:  select vod_id,vod_name,vod_pic,vod_year,
+2.2021-12-15 19:48:54:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-3.2021-12-15 12:27:11:  select vod_id,vod_name,vod_pic,vod_year,
+3.2021-12-15 19:48:55:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-4.2021-12-15 12:27:11:  select vod_id,vod_name,vod_pic,vod_year,
+4.2021-12-15 19:48:55:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-5.2021-12-15 12:27:11:  select vod_id,vod_name,vod_pic,vod_year,
+5.2021-12-15 19:48:55:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-6.2021-12-15 12:27:14:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+6.2021-12-15 19:49:03:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-7.2021-12-15 12:27:14:  select vod_id,vod_name,vod_pic,vod_year,
+7.2021-12-15 19:49:03:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-8.2021-12-15 12:27:14:  select vod_id,vod_name,vod_pic,vod_year,
+8.2021-12-15 19:49:04:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-9.2021-12-15 12:27:14:  select vod_id,vod_name,vod_pic,vod_year,
+9.2021-12-15 19:49:04:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-10.2021-12-15 12:27:15:  select vod_id,vod_name,vod_pic,vod_year,
+10.2021-12-15 19:49:04:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-1.2021-12-15 12:27:22:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+1.2021-12-15 20:55:20:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-2.2021-12-15 12:27:22:  select vod_id,vod_name,vod_pic,vod_year,
+2.2021-12-15 20:55:20:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-3.2021-12-15 12:27:22:  select vod_id,vod_name,vod_pic,vod_year,
+3.2021-12-15 20:55:20:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-4.2021-12-15 12:27:22:  select vod_id,vod_name,vod_pic,vod_year,
+4.2021-12-15 20:55:21:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-5.2021-12-15 12:27:22:  select vod_id,vod_name,vod_pic,vod_year,
+5.2021-12-15 20:55:21:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-6.2021-12-15 12:27:27:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-7.2021-12-15 12:27:27:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-8.2021-12-15 12:27:27:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-9.2021-12-15 12:27:27:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-10.2021-12-15 12:27:27:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-11.2021-12-15 12:27:29:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-12.2021-12-15 12:27:29:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-13.2021-12-15 12:27:29:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-14.2021-12-15 12:27:29:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-15.2021-12-15 12:27:30:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-16.2021-12-15 12:27:31:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-17.2021-12-15 12:27:31:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-18.2021-12-15 12:27:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-19.2021-12-15 12:27:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-20.2021-12-15 12:27:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-21.2021-12-15 12:27:36:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-22.2021-12-15 12:27:46:  select vod_id,vod_name,vod_pic,vod_year,
+6.2021-12-15 21:00:20:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='13980' LIMIT 1
+7.2021-12-15 21:00:20:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='8' ORDER BY vod_score_all desc LIMIT 6 ;  
+8.2021-12-15 21:00:20:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='8' ORDER BY vod_hits desc LIMIT 8 ;  
+9.2021-12-15 21:00:44:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-23.2021-12-15 12:28:10:  select vod_id,vod_name,vod_pic,vod_year,
+10.2021-12-15 21:00:49:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-1.2021-12-15 12:39:07:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_area='中国大陆'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+11.2021-12-15 21:00:50:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-2.2021-12-15 12:39:12:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_area='中国香港'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+12.2021-12-15 21:00:51:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 42,84 
-3.2021-12-15 12:39:16:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-4.2021-12-15 12:39:19:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-5.2021-12-15 12:39:19:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-6.2021-12-15 12:39:19:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+13.2021-12-15 21:00:52:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-7.2021-12-15 12:39:19:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_year='2019'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+14.2021-12-15 21:00:53:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-8.2021-12-15 12:39:19:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_year='2017'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+15.2021-12-15 21:00:54:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-9.2021-12-15 12:45:23:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-10.2021-12-15 12:45:23:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-11.2021-12-15 12:45:23:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_year='2018'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+16.2021-12-15 21:00:56:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-12.2021-12-15 12:45:23:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_year='2019'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+17.2021-12-15 21:00:57:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-13.2021-12-15 12:45:23:  select vod_id,vod_name,vod_pic,vod_year,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_year='2020'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+18.2021-12-15 21:00:58:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-14.2021-12-15 12:45:40:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+     from mac_vod where type_id_1='2'   and 1=1  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+19.2021-12-15 21:01:02:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id_1='2'   and 1=1  and type_id='14'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+20.2021-12-15 21:01:04:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id_1='2'   and 1=1  and type_id='8'  and vod_area='中国台湾'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+21.2021-12-15 21:01:10:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-15.2021-12-15 12:45:40:  select vod_id,vod_name,vod_pic,vod_year,
+22.2021-12-15 21:01:10:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-16.2021-12-15 12:45:40:  select vod_id,vod_name,vod_pic,vod_year,
+23.2021-12-15 21:01:10:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-17.2021-12-15 12:45:40:  select vod_id,vod_name,vod_pic,vod_year,
+24.2021-12-15 21:01:10:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-18.2021-12-15 12:45:40:  select vod_id,vod_name,vod_pic,vod_year,
+25.2021-12-15 21:01:11:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-19.2021-12-15 12:45:52:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-20.2021-12-15 12:45:52:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-21.2021-12-15 12:45:52:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-22.2021-12-15 12:45:52:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-23.2021-12-15 12:45:52:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-24.2021-12-15 12:46:30:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-25.2021-12-15 12:46:30:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-26.2021-12-15 12:46:30:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-27.2021-12-15 12:46:30:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-28.2021-12-15 12:46:30:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-29.2021-12-15 12:46:33:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+26.2021-12-15 21:01:32:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
     vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
      from mac_vod where  vod_id='14226' LIMIT 1
-30.2021-12-15 12:46:33:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+27.2021-12-15 21:01:32:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
     from mac_vod where type_id='11' ORDER BY vod_score_all desc LIMIT 6 ;  
-31.2021-12-15 12:46:33:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+28.2021-12-15 21:01:32:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
     from mac_vod where type_id='11' ORDER BY vod_hits desc LIMIT 8 ;  
-32.2021-12-15 12:46:35:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+29.2021-12-15 21:01:37:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
     vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
-     from mac_vod where  vod_id='7554' LIMIT 1
-33.2021-12-15 12:46:35:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+     from mac_vod where  vod_id='14226' LIMIT 1
+30.2021-12-15 21:02:48:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+31.2021-12-15 21:02:56:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='28753' LIMIT 1
+32.2021-12-15 21:02:56:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
     from mac_vod where type_id='7' ORDER BY vod_score_all desc LIMIT 6 ;  
-34.2021-12-15 12:46:35:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+33.2021-12-15 21:02:56:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
     from mac_vod where type_id='7' ORDER BY vod_hits desc LIMIT 8 ;  
-35.2021-12-15 12:50:04:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-36.2021-12-15 12:50:18:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-37.2021-12-15 12:50:18:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-38.2021-12-15 12:50:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-39.2021-12-15 12:50:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-40.2021-12-15 12:50:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-41.2021-12-15 12:53:50:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-42.2021-12-15 12:53:50:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-43.2021-12-15 12:53:50:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-44.2021-12-15 12:53:50:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-45.2021-12-15 12:53:50:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-46.2021-12-15 12:59:49:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+34.2021-12-15 21:03:06:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
     vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
-     from mac_vod where  vod_id='12340' LIMIT 1
-47.2021-12-15 12:59:49:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='9' ORDER BY vod_score_all desc LIMIT 6 ;  
-48.2021-12-15 12:59:49:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='9' ORDER BY vod_hits desc LIMIT 8 ;  
-49.2021-12-15 13:04:00:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-50.2021-12-15 13:04:00:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-51.2021-12-15 13:04:00:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-52.2021-12-15 13:04:00:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-53.2021-12-15 13:04:00:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-54.2021-12-15 13:04:32:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-55.2021-12-15 13:04:32:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-56.2021-12-15 13:04:32:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-57.2021-12-15 13:04:32:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-58.2021-12-15 13:04:32:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-59.2021-12-15 13:11:53:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-60.2021-12-15 13:11:53:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-61.2021-12-15 13:11:53:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-62.2021-12-15 13:11:53:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-63.2021-12-15 13:11:53:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-64.2021-12-15 13:12:03:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-65.2021-12-15 13:12:03:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-66.2021-12-15 13:12:03:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-67.2021-12-15 13:12:03:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-68.2021-12-15 13:12:03:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-69.2021-12-15 13:14:13:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-70.2021-12-15 13:14:13:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-71.2021-12-15 13:14:13:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-72.2021-12-15 13:14:13:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-73.2021-12-15 13:14:13:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-74.2021-12-15 13:15:39:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-75.2021-12-15 13:15:39:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-76.2021-12-15 13:15:39:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-77.2021-12-15 13:15:39:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-78.2021-12-15 13:15:39:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-79.2021-12-15 13:23:01:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-80.2021-12-15 13:24:48:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-81.2021-12-15 13:24:48:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-82.2021-12-15 13:24:48:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-83.2021-12-15 13:24:48:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-84.2021-12-15 13:24:48:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-85.2021-12-15 13:25:09:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-86.2021-12-15 13:27:38:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-87.2021-12-15 13:27:38:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-88.2021-12-15 13:27:38:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-89.2021-12-15 13:27:38:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-90.2021-12-15 13:27:38:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-91.2021-12-15 13:27:55:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-92.2021-12-15 13:27:55:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-93.2021-12-15 13:27:55:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-94.2021-12-15 13:27:55:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-95.2021-12-15 13:27:56:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-96.2021-12-15 13:30:23:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-97.2021-12-15 13:30:23:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-98.2021-12-15 13:30:23:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-99.2021-12-15 13:30:23:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-100.2021-12-15 13:30:24:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-101.2021-12-15 13:31:10:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+     from mac_vod where  vod_id='28753' LIMIT 1
+35.2021-12-15 21:03:40:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
     vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
-     from mac_vod where  vod_id='7554' LIMIT 1
-102.2021-12-15 13:31:10:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='7' ORDER BY vod_score_all desc LIMIT 6 ;  
-103.2021-12-15 13:31:10:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
-    from mac_vod where type_id='7' ORDER BY vod_hits desc LIMIT 8 ;  
-104.2021-12-15 13:31:44:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+     from mac_vod where  vod_id='28753' LIMIT 1
+36.2021-12-15 21:04:27:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-105.2021-12-15 13:31:44:  select vod_id,vod_name,vod_pic,vod_year,
+37.2021-12-15 21:04:27:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-106.2021-12-15 13:31:44:  select vod_id,vod_name,vod_pic,vod_year,
+38.2021-12-15 21:04:27:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-107.2021-12-15 13:31:44:  select vod_id,vod_name,vod_pic,vod_year,
+39.2021-12-15 21:04:27:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-108.2021-12-15 13:31:44:  select vod_id,vod_name,vod_pic,vod_year,
+40.2021-12-15 21:04:27:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-109.2021-12-15 13:37:18:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-110.2021-12-15 13:37:18:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-111.2021-12-15 13:37:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-112.2021-12-15 13:37:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-113.2021-12-15 13:37:18:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-114.2021-12-15 13:37:59:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-115.2021-12-15 13:37:59:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-116.2021-12-15 13:37:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-117.2021-12-15 13:37:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-118.2021-12-15 13:37:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-119.2021-12-15 13:39:31:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-120.2021-12-15 13:39:31:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-121.2021-12-15 13:39:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-122.2021-12-15 13:39:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-123.2021-12-15 13:39:31:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-124.2021-12-15 13:42:57:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-125.2021-12-15 13:42:57:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-126.2021-12-15 13:42:57:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-127.2021-12-15 13:42:57:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-128.2021-12-15 13:42:58:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-129.2021-12-15 13:43:14:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-130.2021-12-15 13:43:14:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-131.2021-12-15 13:43:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-132.2021-12-15 13:43:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-133.2021-12-15 13:43:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-134.2021-12-15 13:44:04:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-135.2021-12-15 13:44:04:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-136.2021-12-15 13:44:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-137.2021-12-15 13:44:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-138.2021-12-15 13:44:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-139.2021-12-15 13:49:04:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-140.2021-12-15 13:49:04:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-141.2021-12-15 13:49:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-142.2021-12-15 13:49:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-143.2021-12-15 13:49:04:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-144.2021-12-15 13:52:14:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-145.2021-12-15 13:52:14:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-146.2021-12-15 13:52:15:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-147.2021-12-15 13:52:15:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-148.2021-12-15 13:52:15:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-149.2021-12-15 13:54:51:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-150.2021-12-15 13:54:51:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-151.2021-12-15 13:54:51:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-152.2021-12-15 13:54:51:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-153.2021-12-15 13:54:51:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-154.2021-12-15 13:54:54:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-155.2021-12-15 13:54:54:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-156.2021-12-15 13:54:54:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-157.2021-12-15 13:54:54:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-158.2021-12-15 13:54:54:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-159.2021-12-15 13:55:17:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-160.2021-12-15 13:55:59:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-161.2021-12-15 13:55:59:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-162.2021-12-15 13:55:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-163.2021-12-15 13:55:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-164.2021-12-15 13:55:59:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-165.2021-12-15 13:59:46:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-166.2021-12-15 13:59:46:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-167.2021-12-15 13:59:47:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-168.2021-12-15 13:59:47:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-169.2021-12-15 13:59:47:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-170.2021-12-15 14:00:33:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-171.2021-12-15 14:00:33:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-172.2021-12-15 14:00:33:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-173.2021-12-15 14:00:34:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-174.2021-12-15 14:00:34:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-175.2021-12-15 14:00:40:  select vod_id,vod_name,vod_pic,vod_year,
+41.2021-12-15 21:04:29:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
     from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-176.2021-12-15 14:00:42:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+42.2021-12-15 21:04:30:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-177.2021-12-15 14:00:42:  select vod_id,vod_name,vod_pic,vod_year,
+    from mac_vod where type_id_1='1'    and 1=1  and vod_area='中国大陆'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+43.2021-12-15 21:04:31:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-178.2021-12-15 14:00:42:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-179.2021-12-15 14:00:42:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-180.2021-12-15 14:00:42:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-181.2021-12-15 14:00:43:  select vod_id,vod_name,vod_pic,vod_year,
+    from mac_vod where type_id_1='1'    and 1=1  and vod_year='2021'  and vod_area='中国大陆'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+44.2021-12-15 21:04:32:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-182.2021-12-15 14:00:45:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    from mac_vod where type_id_1='1'    and 1=1  and vod_year='2021'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+45.2021-12-15 21:04:33:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-183.2021-12-15 14:00:45:  select vod_id,vod_name,vod_pic,vod_year,
+    from mac_vod where type_id_1='1'    and 1=1  and type_id='9'  and vod_year='2021'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+46.2021-12-15 21:04:33:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-184.2021-12-15 14:00:45:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-185.2021-12-15 14:00:45:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-186.2021-12-15 14:00:45:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-187.2021-12-15 14:01:05:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-188.2021-12-15 14:01:05:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-189.2021-12-15 14:01:05:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-190.2021-12-15 14:01:05:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-191.2021-12-15 14:01:06:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-193.2021-12-15 14:01:11:  SELECT COUNT(*) as total from mac_vod where  type_id='4' 
-192.2021-12-15 14:01:11:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where type_id='4'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-194.2021-12-15 14:01:14:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-195.2021-12-15 14:01:14:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-196.2021-12-15 14:01:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-197.2021-12-15 14:01:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-198.2021-12-15 14:01:14:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-199.2021-12-15 14:01:19:  select vod_id,vod_name,vod_pic,vod_year,
+    from mac_vod where type_id_1='1'    and 1=1  and type_id='9'  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+47.2021-12-15 21:04:34:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
     from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-200.2021-12-15 14:01:20:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-201.2021-12-15 14:01:24:  select vod_id,vod_name,vod_pic,vod_year,
+48.2021-12-15 21:04:38:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-202.2021-12-15 14:01:24:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 42,84 
+49.2021-12-15 21:06:13:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-203.2021-12-15 14:01:24:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-204.2021-12-15 14:01:24:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-205.2021-12-15 14:01:24:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-206.2021-12-15 14:06:27:  select vod_id,vod_name,vod_pic,vod_year,
+    from mac_vod where type_id_1='1'    and 1=1  and vod_area='法国'  ORDER BY vod_time_add  DESC   LIMIT 42,84 
+50.2021-12-15 21:06:15:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-207.2021-12-15 14:06:27:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    from mac_vod where type_id_1='1'    and 1=1  and vod_area='韩国'  ORDER BY vod_time_add  DESC   LIMIT 42,84 
+51.2021-12-15 21:06:21:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  and vod_area='德国'  ORDER BY vod_time_add  DESC   LIMIT 42,84 
+52.2021-12-15 21:09:37:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-208.2021-12-15 14:06:27:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-209.2021-12-15 14:06:28:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-210.2021-12-15 14:06:28:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-211.2021-12-15 14:06:30:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-212.2021-12-15 14:07:15:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-213.2021-12-15 14:07:27:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-214.2021-12-15 14:08:09:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-215.2021-12-15 14:08:09:  select vod_id,vod_name,vod_pic,vod_year,
+53.2021-12-15 21:09:37:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-216.2021-12-15 14:08:09:  select vod_id,vod_name,vod_pic,vod_year,
+54.2021-12-15 21:09:38:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-217.2021-12-15 14:08:09:  select vod_id,vod_name,vod_pic,vod_year,
+55.2021-12-15 21:09:38:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-218.2021-12-15 14:08:09:  select vod_id,vod_name,vod_pic,vod_year,
+56.2021-12-15 21:09:38:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-219.2021-12-15 14:08:22:  select vod_id,vod_name,vod_pic,vod_year,
+57.2021-12-15 21:09:39:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
     from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-220.2021-12-15 14:08:23:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-221.2021-12-15 14:08:23:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+58.2021-12-15 21:09:39:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-222.2021-12-15 14:08:23:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-223.2021-12-15 14:08:23:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-224.2021-12-15 14:08:23:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-225.2021-12-15 14:08:28:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-226.2021-12-15 14:08:57:  select vod_id,vod_name,vod_pic,vod_year,
+59.2021-12-15 21:09:39:  select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-227.2021-12-15 14:08:57:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-228.2021-12-15 14:08:57:  select vod_id,vod_name,vod_pic,vod_year,
+60.2021-12-15 21:09:39:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-229.2021-12-15 14:08:57:  select vod_id,vod_name,vod_pic,vod_year,
+61.2021-12-15 21:09:40:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-230.2021-12-15 14:08:57:  select vod_id,vod_name,vod_pic,vod_year,
+62.2021-12-15 21:09:40:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-231.2021-12-15 14:09:01:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
-232.2021-12-15 14:09:01:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
-233.2021-12-15 14:09:01:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-234.2021-12-15 14:09:02:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-235.2021-12-15 14:09:02:  select vod_id,vod_name,vod_pic,vod_year,
-     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
-1.2021-12-15 14:57:40:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-1.2021-12-15 14:58:50:  执行 连接检查
-1.2021-12-15 14:59:13:  执行 连接检查
-1.2021-12-15 15:00:34:  执行 连接检查
-1.2021-12-15 15:01:08:  执行 连接检查
-1.2021-12-15 15:01:10:  uid:4564654
-2.2021-12-15 15:01:10:  token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NTY0NjU0Iiwic2NvcGUiOjUsImlhdCI6MTYzOTU1MTY3MCwiZXhwIjoxNjM5NjM4MDcwfQ.FLOzGW8whJ4Oj2B-RRpTJvECRXke4yBc7kdSnIwDtHE
-1.2021-12-15 15:01:38:  执行 连接检查
-1.2021-12-15 15:01:43:  执行 连接检查
-1.2021-12-15 15:01:57:  执行 连接检查
-1.2021-12-15 15:01:58:  uid:4564654scope:5
-2.2021-12-15 15:01:58:  token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NTY0NjU0Iiwic2NvcGUiOjUsImlhdCI6MTYzOTU1MTcxOCwiZXhwIjoxNjM5NjM4MTE4fQ.VENRZD5Z4ej1fJRYnF6Zjt-8zRu04txmtGbFX1feC88
-1.2021-12-15 15:02:21:  执行 连接检查
-1.2021-12-15 15:02:24:  uid:4564654scope:5
-2.2021-12-15 15:02:24:  token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NTY0NjU0Iiwic2NvcGUiOjUsImlhdCI6MTYzOTU1MTc0NCwiZXhwIjoxNjM5NjM4MTQ0fQ.tuw12vamLJQ75uUz4tD7t8NMCZdcXde7AQ1WCKOtgxg
-1.2021-12-15 15:02:47:  执行 连接检查
-1.2021-12-15 15:02:49:  执行 连接检查
-1.2021-12-15 15:02:51:  uid:4564654,scope:,5
-2.2021-12-15 15:02:51:  token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NTY0NjU0Iiwic2NvcGUiOjUsImlhdCI6MTYzOTU1MTc3MSwiZXhwIjoxNjM5NjM4MTcxfQ.dlO6vWjNwbqAY17ORCcEaDSuFFE_dpeBnVEmS_5A-2w
-1.2021-12-15 15:03:37:  执行 连接检查
-2.2021-12-15 15:03:39:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-1.2021-12-15 15:03:46:  uid:4564654,scope:,5
-2.2021-12-15 15:03:46:  token:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NTY0NjU0Iiwic2NvcGUiOjUsImlhdCI6MTYzOTU1MTgyNiwiZXhwIjoxNjM5NjM4MjI2fQ.nQs-it53aF0dnwGn508tUp1hmzrDJU8j2GB32Xh__Wc
-1.2021-12-15 15:04:03:  执行 连接检查
-1.2021-12-15 15:04:04:  执行 连接检查
-2.2021-12-15 15:04:09:  select vod_id,vod_name,vod_pic,vod_year,
-    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
-    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
-1.2021-12-15 15:04:55:  执行 连接检查
-2.2021-12-15 15:06:55:  重连mysql:re_connecting lost connection
