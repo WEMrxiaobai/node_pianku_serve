@@ -2,7 +2,7 @@
 const { SuccessModel, ErrorModel } = require('../model/responseModel');
 const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video');
-const { adminLogin } = require('../controllers/admin');
+const { adminLogin, tokenIS,adminCategory } = require('../controllers/admin');
 const { Urlreg } = require('../model/Urlreg');
 
 const handleRoute = (req, res) => {
@@ -18,7 +18,10 @@ const handleRoute = (req, res) => {
     const type_id = req.query.type_id || '';
     const type_id_1 = req.query.type_id_1 || '';
     const showNum = 42; //mv页显示条数
-
+    /**
+     *      视频首页路由
+     *      
+     */
     // 判断路由 
     //首页 banner
     if (method === 'GET' && req.path === '/api/index/banner') {
@@ -214,7 +217,10 @@ const handleRoute = (req, res) => {
             msg: ""
         }
     }
-
+    /**
+     *      admin 路由
+     *      
+     */
     //admin 管理员登录  验证   
     if (method === 'POST' && req.path === '/admin/login') {
         const adminLoginPromise = adminLogin(req.body);
@@ -228,21 +234,39 @@ const handleRoute = (req, res) => {
     }
     //admin 主页信息显示  
     if (method === 'POST' && req.path === '/admin/index') {
-        return {
-            msg: ""
-        }
-    }
-    //admin 主页信息显示  
-    if (method === 'POST' && req.path === '/admin/test') {
-
-        return testPromise = new Promise((resolve, reject) => {
-            if (false) {
-                resolve({ 'msg': req.body });
+        const adminIndexPromise = adminIndex(req.body);
+        return adminIndexPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(data);
             } else {
-                reject({ 'err': req.body });
-            };
+                return new ErrorModel(data);
+            }
         })
-        .catch(err=>{
+    }
+    // admin adminCategory
+    if (method === 'POST' && req.path === '/admin/category') {
+        const adminCategoryPromise = adminCategory(req.body);
+        return adminCategoryPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(data);
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+
+    //admin istoken 
+    if (method === 'POST' && req.path === '/admin/istoken') {
+        return testPromise = new Promise((resolve, reject) => {
+            // console.log(req.body);
+            var isToken = tokenIS(req.body);
+            
+            if (isToken) {
+                resolve({'err': isToken});
+            } else {
+                reject({ 'err': isToken });
+            };
+        }).catch(err => {
             return err
         })
 

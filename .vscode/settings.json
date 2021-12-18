@@ -2,8 +2,10 @@
     "cSpell.words": [
         "backdata",
         "dataurl",
+        "istoken",
         "movid",
         "mvdata",
+        "newtoken",
         "paixu",
         "reqbody",
         "reurl",
@@ -11,6 +13,7 @@
         "sqlback",
         "sqldata",
         "sqltype",
+        "tkor",
         "tvdata",
         "Urlreg",
         "vadata"

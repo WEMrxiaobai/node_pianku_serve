@@ -1,17 +1,20 @@
 const { rejects } = require('assert')
 const querystring = require('querystring')
 const handleRoute = require('./src/routes/router')
-
+const qs = require('qs');
 
 // 处理 POST 数据
 const getPostData = (req) => {
     const promise = new Promise((resolve, reject) => {
+        // console.log("req.method:",req.method);
+        
         if (req.method !== 'POST') {
+            console.log("POST:");
             resolve({});
             return;
         }
-        if (req.headers['content-type'] !== 'application/json') {
-            // console.log(req.headers);
+        if (req.headers['content-type'] !== 'application/json' && req.headers['content-type'] !=='application/x-www-form-urlencoded') {
+            // console.log(req.headers);   //小写！
             resolve({});
             return;
         }
@@ -23,6 +26,11 @@ const getPostData = (req) => {
         req.on('end', () => {
             if (!postDate) {
                 resolve({});
+                return;
+            }
+            if(req.headers['content-type'] =='application/x-www-form-urlencoded'){
+                console.log("from:",qs.parse(postDate));
+                resolve(qs.parse(postDate));
                 return;
             }
             resolve(JSON.parse(postDate));
@@ -49,7 +57,7 @@ const serverHandler = (req, res) => {
 
     //处理post数据
     getPostData(req).then((postDate) => {
-        // console.log("获取post内容",postDate);
+        console.log("获取post内容:",postDate);
         req.body = postDate;
 
         //路由功能 给路由传参  

@@ -29,10 +29,41 @@ const adminLogin = (body) => {
     });
     return isLogin;
 }
+// 分类管理
+const adminCategory=(data)=>{
+    var tkor=tokenIS(data.token);
+    if(tkor){
+        // console.log("分类管理",tkor);
+        let sql = `select type_id,type_name,type_en,type_pid,type_status,type_sort from mac_type order by type_id asc `;
+        log(sql)
+        let newtoken={"token":generateToken(tkor.uid,tkor.scope)}
+        const callback = Promise.all([execSQL(sql),newtoken])
+        return callback;
+    }else{
+        console.log("err");
+        return Promise.all([{'error': -1,'code': 10099,'msg': 'token失效'}])
+    }
+    
+}
 
-// verify鉴定token
 
 
+
+
+const tokenIS=(token)=>{
+    let verify=verifyToken(token);
+    if(verify){
+        let uid=verify.uid;
+        let scope=verify.scope;
+        // const {uid,scope}=verify;
+        console.log("----uid",uid,scope,new Date());
+        return {uid,scope} ;
+    }else{
+        return false;
+    }
+}
+// console.log(tokenIS('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTYzOTY0NTYzOSwiZXhwIjoxNjM5NjQ5MjM5fQ.TYPSbkVaJJG0gKMquBKC2nxS4jWQ1hAcmXT6dXo6Vr8'));
 module.exports = {
-    adminLogin
+    adminLogin,tokenIS,
+    adminCategory,
 }
