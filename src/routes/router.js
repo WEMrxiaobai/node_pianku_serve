@@ -2,7 +2,7 @@
 const { SuccessModel, ErrorModel } = require('../model/responseModel');
 const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video');
-const { adminLogin, tokenIS,adminCategory } = require('../controllers/admin');
+const { adminLogin, tokenIS,adminCategory,adminVideo } = require('../controllers/admin');
 const { Urlreg } = require('../model/Urlreg');
 
 const handleRoute = (req, res) => {
@@ -254,7 +254,17 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
+  // admin adminVideo
+  if (method === 'POST' && req.path === '/admin/video') {
+    const adminVideoPromise = adminVideo(req.body);
+    return adminVideoPromise.then((data) => {
+        if (data) {
+            return new SuccessModel(data);
+        } else {
+            return new ErrorModel(data);
+        }
+    })
+}
     //admin istoken 
     if (method === 'POST' && req.path === '/admin/istoken') {
         return testPromise = new Promise((resolve, reject) => {

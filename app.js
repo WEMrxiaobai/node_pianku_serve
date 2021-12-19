@@ -57,7 +57,7 @@ const serverHandler = (req, res) => {
 
     //处理post数据
     getPostData(req).then((postDate) => {
-        console.log("获取post内容:",postDate);
+        // console.log("获取post内容:",postDate);
         req.body = postDate;
 
         //路由功能 给路由传参  
