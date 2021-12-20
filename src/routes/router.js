@@ -283,10 +283,9 @@ const handleRoute = (req, res) => {
     }
     // 影片新增  
 
-    // 图片静态加载
+    // 图片加载
     // http://10.101.5.21:5200/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
     // http://maccms:8083/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
-    // 
     if (method === 'GET' && req.path.slice(0,7) === '/upload') {
         // console.log("req path:",req.path);
         const imagesPromise= getImages(req.path);
@@ -298,4 +297,6 @@ const handleRoute = (req, res) => {
     }
 
 }
+
+
 module.exports = handleRoute;
