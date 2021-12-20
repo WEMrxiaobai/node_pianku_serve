@@ -4,7 +4,7 @@ const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video');
 const { adminLogin, tokenIS,adminCategory,adminVideo } = require('../controllers/admin');
 const { Urlreg } = require('../model/Urlreg');
-
+const { getImages } =require('../model/UrlImages')
 const handleRoute = (req, res) => {
 
     const method = req.method //获得方法
@@ -23,6 +23,7 @@ const handleRoute = (req, res) => {
      *      
      */
     // 判断路由 
+
     //首页 banner
     if (method === 'GET' && req.path === '/api/index/banner') {
 
@@ -181,7 +182,6 @@ const handleRoute = (req, res) => {
             }
         })
     }
-
     // 用户注册 
     if (method === 'POST' && req.path === '/api/register') {
         const listDataPromise = insertUser(req.body);
@@ -254,17 +254,17 @@ const handleRoute = (req, res) => {
             }
         })
     }
-  // admin adminVideo
-  if (method === 'POST' && req.path === '/admin/video') {
-    const adminVideoPromise = adminVideo(req.body);
-    return adminVideoPromise.then((data) => {
-        if (data) {
+    // admin adminVideo
+    if (method === 'POST' && req.path === '/admin/video') {
+     const adminVideoPromise = adminVideo(req.body);
+     return adminVideoPromise.then((data) => {
+         if (data) {
             return new SuccessModel(data);
-        } else {
+         } else {
             return new ErrorModel(data);
-        }
-    })
-}
+         }
+      })
+    }
     //admin istoken 
     if (method === 'POST' && req.path === '/admin/istoken') {
         return testPromise = new Promise((resolve, reject) => {
@@ -282,6 +282,20 @@ const handleRoute = (req, res) => {
 
     }
     // 影片新增  
+
+    // 图片静态加载
+    // http://10.101.5.21:5200/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
+    // http://maccms:8083/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
+    // 
+    if (method === 'GET' && req.path.slice(0,7) === '/upload') {
+        // console.log("req path:",req.path);
+        const imagesPromise= getImages(req.path);
+        return imagesPromise.then((data)=>{
+            if(data){
+                return data;
+            }
+        });
+    }
 
 }
 module.exports = handleRoute;

@@ -1,15 +1,13 @@
-const { rejects } = require('assert')
 const querystring = require('querystring')
 const handleRoute = require('./src/routes/router')
 const qs = require('qs');
-
+const { getImages } =require('./src/model/UrlImages')
 // 处理 POST 数据
 const getPostData = (req) => {
     const promise = new Promise((resolve, reject) => {
         // console.log("req.method:",req.method);
-        
         if (req.method !== 'POST') {
-            console.log("POST:");
+            // console.log("POST:");
             resolve({});
             return;
         }
@@ -54,7 +52,7 @@ const serverHandler = (req, res) => {
     req.path = url.split("?")[0];
 
     req.query = querystring.parse(url.split('?')[1]);
-
+    
     //处理post数据
     getPostData(req).then((postDate) => {
         // console.log("获取post内容:",postDate);
@@ -64,13 +62,16 @@ const serverHandler = (req, res) => {
         const routeDataPromise = handleRoute(req, res);
         if (routeDataPromise) {
             routeDataPromise.then((routeData)=>{ 
-                res.end(JSON.stringify(routeData)); //返回数据
+                if(Buffer.isBuffer(routeData)){
+                    res.end(routeData); //返回数据
+                }else{
+                    res.end(JSON.stringify(routeData)); //返回数据
+                }
             })
             return;
         }
-        //404
-
-        res.writeHead(404, { 'COntent-Type': 'text/plain' });
+        
+        res.writeHead(404, { 'Content-Type': 'text/plain' });//404
         res.write('404 Not Found');
         res.end();
     })
