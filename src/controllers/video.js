@@ -168,7 +168,7 @@ const getDoc = (showNum, page, val) => {
 
 // getID 获取影片详情
 const getID = (id) => {
-    let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score
+    let sql = `select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score,vod_pubdate,
     vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
      from mac_vod where `;
     if (id) {

@@ -37,9 +37,8 @@ const getPostData = (req) => {
     });
     return promise
 }
-
+ //设置响应格式
 const serverHandler = (req, res) => {
-    //设置响应格式
     //配置请求的域名，*代表任意
     res.setHeader("Access-Control-Allow-Origin", "*");   
     // 支持跨域请求类型

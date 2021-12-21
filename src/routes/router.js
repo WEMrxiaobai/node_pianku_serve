@@ -2,7 +2,7 @@
 const { SuccessModel, ErrorModel } = require('../model/responseModel');
 const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video');
-const { adminLogin, tokenIS,adminCategory,adminVideo } = require('../controllers/admin');
+const { adminLogin, tokenIS,adminCategory,adminVideo,adminIndex } = require('../controllers/admin');
 const { Urlreg } = require('../model/Urlreg');
 const { getImages } =require('../model/UrlImages')
 const handleRoute = (req, res) => {
@@ -232,6 +232,7 @@ const handleRoute = (req, res) => {
             }
         })
     }
+
     //admin 主页信息显示  
     if (method === 'POST' && req.path === '/admin/index') {
         const adminIndexPromise = adminIndex(req.body);
@@ -270,11 +271,10 @@ const handleRoute = (req, res) => {
         return testPromise = new Promise((resolve, reject) => {
             // console.log(req.body);
             var isToken = tokenIS(req.body);
-            
             if (isToken) {
                 resolve({'err': isToken});
             } else {
-                reject({ 'err': isToken });
+                reject({'error': -1,'code': 10099,'msg': 'token失效'});
             };
         }).catch(err => {
             return err
@@ -295,6 +295,8 @@ const handleRoute = (req, res) => {
             }
         });
     }
+    // 遍历文件
+
 
 }
 
