@@ -1,8 +1,9 @@
 
-const request =require('request')
+const request =require('request');
+const iconv= require('iconv-lite');
 
-request('http://www.baidu.com',function(err, res,body){
+request('https://www.ygdy8.com/html/gndy/china/list_4_1.html',function(err, res,body){
     console.log(err);
-    console.log(res);
+    // console.log(res);
     console.log(body);
 })
