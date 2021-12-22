@@ -152,7 +152,8 @@ const adminVideo=(data)=>{
     }else{
         console.log("视频管理error");
         return Promise.all([{'error': -1,'code': 10099,'msg': 'token失效'}])
-    }
+    } 
+    
     
 }
 
