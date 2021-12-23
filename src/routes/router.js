@@ -244,7 +244,7 @@ const handleRoute = (req, res) => {
             }
         })
     }
-    // admin adminCategory
+    // admin adminCategory 分类管理
     if (method === 'POST' && req.path === '/admin/category') {
         const adminCategoryPromise = adminCategory(req.body);
         return adminCategoryPromise.then((data) => {
@@ -285,7 +285,6 @@ const handleRoute = (req, res) => {
 
     // 图片加载
     // http://10.101.5.21:5200/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
-    // http://maccms:8083/upload/vod/20211210-4/356298fbb979742a4b5bf53cab059f17.jpg
     if (method === 'GET' && req.path.slice(0,7) === '/upload') {
         // console.log("req path:",req.path);
         const imagesPromise= getImages(req.path);

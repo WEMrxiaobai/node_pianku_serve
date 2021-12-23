@@ -89,6 +89,7 @@ const getMv = (showNum, page, val) => {
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
     from mac_vod where type_id_1='1'  `;
     sql += ` ${sqltype(val)} `;
+    countSql+=` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
     sql += ` LIMIT ${startPage},${endPage} `;
     // console.log("getMv--sql:", sql);
@@ -291,6 +292,114 @@ function sqltype(type) {
         34: '头条',
 
     }
+    /**
+     * 
+     * 
+     * {
+          value: 1,
+          label: "电影",
+        },
+        {
+          value: 2,
+          label: "连续剧",
+        },
+        {
+          value: 3,
+          label: "综艺",
+        },
+        {
+          value: 4,
+          label: "动漫",
+        },
+        {
+          value: 6,
+          label: "动作",
+        },
+        {
+          value: 7,
+          label: "喜剧",
+        },
+        {
+          value: 8,
+          label: "爱情",
+        },
+        {
+          value: 9,
+          label: "科幻",
+        },
+        {
+          value: 10,
+          label: "恐怖",
+        },
+        {
+          value: 11,
+          label: "剧情",
+        },
+        {
+          value: 12,
+          label: "战争",
+        },
+        {
+          value: 13,
+          label: "国产",
+        },
+        {
+          value: 14,
+          label: "港台",
+        },
+        {
+          value: 15,
+          label: "日韩",
+        },
+        {
+          value: 16,
+          label: "欧美",
+        },
+        {
+          value: 20,
+          label: "惊悚",
+        },
+        {
+          value: 21,
+          label: "犯罪",
+        },
+        {
+          value: 22,
+          label: "冒险",
+        },
+        {
+          value: 23,
+          label: "悬疑",
+        },
+        {
+          value: 24,
+          label: "动画",
+        },
+        {
+          value: 25,
+          label: "武侠",
+        },
+        {
+          value: 26,
+          label: "奇幻",
+        },
+        {
+          value: 27,
+          label: "纪录",
+        },
+        {
+          value: 31,
+          label: "影视资讯",
+        },
+        {
+          value: 33,
+          label: "八卦",
+        },
+        {
+          value: 34,
+          label: "头条",
+        },
+     */
     console.log("type[0]", type[0]);
     let sqlback = ' and 1=1 ';
     // 类型 电影
@@ -309,7 +418,6 @@ function sqltype(type) {
     if (type[0] == "武侠") { sqlback += ` and type_id='25' `; }
     if (type[0] == "奇幻") { sqlback += ` and type_id='26' `; }
     if (type[0] == "纪录") { sqlback += ` and type_id='27' `; }
-
     if (type[0] == "国产") { sqlback += ` and type_id='13' `; }
     if (type[0] == "港台") { sqlback += ` and type_id='14' `; }
     if (type[0] == "日韩") { sqlback += ` and type_id='15' `; }
@@ -356,7 +464,8 @@ function stripscript(s) {  //格式 RegExp("[在中间定义特殊过滤字符]"
 }
 module.exports = {
     getIndexMv, getIndexTv, getIndexVa, getArt, insertUser, getIndexAC,
-    getMv, getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getBanner,getPlayerVideo
+    getMv, getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getBanner,getPlayerVideo,
+    stripscript,sqlPaixu,sqltype
 
 }
 

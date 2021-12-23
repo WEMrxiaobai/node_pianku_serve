@@ -3,7 +3,7 @@ const { execSQL } = require('../db/mysql');
 const { log } = require('../model/Log');
 const md5 = require("md5");
 const { generateToken, verifyToken } = require('../model/Tonken')
-
+const { sqlPaixu,sqltype}=require('./video')
 //admin登录
 const adminLogin = (body) => {
     let username = body.name;
@@ -12,7 +12,7 @@ const adminLogin = (body) => {
     log(sql);
     const isLogin = execSQL(sql).then((data) => {
         if (data.length !== 0) {
-            console.log("login：", data[0].admin_name, new Date());
+            // console.log("login：", data[0].admin_name, new Date());
             let token=generateToken(username, data[0].admin_status);
             log(data[0].admin_name,":",token)
             return {
@@ -117,14 +117,26 @@ const adminCategory=(data)=>{
 const adminVideo=(data)=>{
     let tkor=tokenIS(data.token);
     let sqlVideo='';
+    let countSql='';
     if(tkor){ //token判断
-        // console.log("分类管理",tkor);
+        // console.log("视频管理",tkor);
         console.log("视频管理:",data);
+        let showNum = data.showNum  ||  20;
+        let page= data.page  ||  1;;
+        let val=['全部', '全部', '全部', '全部', 'time'];
         try {
         if(data.method=='get'){
             // 查询
-            sqlVideo = `select type_id,type_name,type_en,type_pid,type_status,
-            type_sort from mac_type order by type_id asc `;
+            let startPage = showNum * page;
+            let endPage = startPage + showNum;
+            countSql = `SELECT COUNT(*) as total from mac_vod where  type_id_1='1' `;
+            sqlVideo = `select *
+            from mac_vod where type_id_1='1'  `;
+            sqlVideo += ` ${sqltype(val)} `;
+            countSql+=` ${sqltype(val)} `;
+            sqlVideo += `ORDER BY ${sqlPaixu(val)} DESC `;
+            sqlVideo += ` LIMIT ${startPage},${endPage} `;
+            
         }else if(data.method=='upt'){
             // 更新
             sqlVideo = `UPDATE mac_type SET type_name = '${data.edit.type_name}' ,type_pid = '${data.edit.type_pid}',
@@ -145,9 +157,9 @@ const adminVideo=(data)=>{
             console.log(error,new Date() ,'分类');
         }
         
-        log(sqlVideo)
+        log(sqlVideo,countSql)
         let newtoken={"token":generateToken(tkor.uid,tkor.scope)}
-        const callback = Promise.all([execSQL(sqlVideo),newtoken])
+        const callback = Promise.all([execSQL(sqlVideo),newtoken,execSQL(countSql)])
         return callback;
     }else{
         console.log("视频管理error");
@@ -192,7 +204,10 @@ function _int2iP(num)
     return str;
 }
 // console.log(tokenIS('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTYzOTY0NTYzOSwiZXhwIjoxNjM5NjQ5MjM5fQ.TYPSbkVaJJG0gKMquBKC2nxS4jWQ1hAcmXT6dXo6Vr8'));
+
+
 module.exports = {
     adminLogin,tokenIS,adminIndex,
-    adminCategory,adminVideo
+    adminCategory,adminVideo,
+    _ip2int,_int2iP
 }
