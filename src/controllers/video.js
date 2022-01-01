@@ -400,7 +400,7 @@ function sqltype(type) {
           label: "头条",
         },
      */
-    console.log("type[0]", type[0]);
+    // console.log("type[0]", type[0]);
     let sqlback = ' and 1=1 ';
     // 类型 电影
     if (type[0] == "动作") { sqlback += ` and type_id='6' `; }
@@ -424,15 +424,16 @@ function sqltype(type) {
     if (type[0] == "欧美") { sqlback += ` and type_id='16' `; }
 
 
-    console.log("-----");
+    // console.log("-----");
     // 年代  type[1]  vod_year
     if (type[1] != "全部") {
         // console.log("sql过滤字符",stripscript(type[1]));
         sqlback += ` and vod_year='${stripscript(type[1])}' `;
         // console.log("----", ` and vod_year='${stripscript(type[1])}' `);
-    } else {
-        console.log("-----");
-    }
+    } 
+    // else {
+    //     console.log("--type[1] != '全部'---");
+    // }
 
     // 地区  type[2]  vod_area
     if (type[2] != "全部") { sqlback += ` and vod_area='${stripscript(type[2])}' `; }

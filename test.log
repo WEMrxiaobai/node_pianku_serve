@@ -644,3 +644,358 @@
 6.2022-01-01 13:45:45:  select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+7.2022-01-01 13:46:39:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 180,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+8.2022-01-01 13:46:41:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 160,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+9.2022-01-01 13:46:42:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+10.2022-01-01 13:46:45:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+11.2022-01-01 13:46:48:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+12.2022-01-01 13:46:49:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+13.2022-01-01 13:46:52:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+14.2022-01-01 13:48:22:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+15.2022-01-01 13:48:48:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+16.2022-01-01 13:48:56:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+17.2022-01-01 13:48:58:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 13:49:55:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+2.2022-01-01 13:50:05:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+3.2022-01-01 13:50:10:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+4.2022-01-01 13:50:21:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+5.2022-01-01 13:50:40:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+6.2022-01-01 13:50:52:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,40 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 13:51:51:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+2.2022-01-01 13:52:01:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+3.2022-01-01 13:52:25:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+4.2022-01-01 13:52:35:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+5.2022-01-01 13:52:37:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+6.2022-01-01 13:52:42:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,40 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+7.2022-01-01 13:52:48:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+8.2022-01-01 13:52:53:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+9.2022-01-01 13:52:54:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+10.2022-01-01 13:52:56:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 100,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+11.2022-01-01 13:53:08:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id='4'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+12.2022-01-01 13:53:08:  SELECT COUNT(*) as total from mac_vod where  type_id='4' 
+13.2022-01-01 13:53:11:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score,vod_pubdate,
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='31031' LIMIT 1
+14.2022-01-01 13:53:11:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='4' ORDER BY vod_score_all desc LIMIT 6 ;  
+15.2022-01-01 13:53:11:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='4' ORDER BY vod_hits desc LIMIT 8 ;  
+16.2022-01-01 13:53:23:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+17.2022-01-01 13:53:23:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+18.2022-01-01 13:53:23:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+19.2022-01-01 13:53:23:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+20.2022-01-01 13:53:23:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+21.2022-01-01 13:56:36:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+22.2022-01-01 13:58:45:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+23.2022-01-01 14:00:37:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+24.2022-01-01 14:02:01:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+25.2022-01-01 14:02:06:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+26.2022-01-01 14:03:10:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+27.2022-01-01 14:03:28:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 14:08:25:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+2.2022-01-01 14:12:11:  select *
+            from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 14:13:09:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+2.2022-01-01 14:13:54:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+3.2022-01-01 14:14:23:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+4.2022-01-01 14:15:46:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 14:21:45:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 14:45:22:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+1.2022-01-01 15:01:57:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+2.2022-01-01 15:02:01:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+3.2022-01-01 15:02:04:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id='3'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+5.2022-01-01 15:02:06:  SELECT COUNT(*) as total from mac_vod where  type_id='4' 
+4.2022-01-01 15:02:06:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id='4'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+6.2022-01-01 15:02:07:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+7.2022-01-01 15:02:07:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+8.2022-01-01 15:02:07:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+9.2022-01-01 15:02:08:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+10.2022-01-01 15:02:08:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+11.2022-01-01 15:02:08:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+12.2022-01-01 15:02:17:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+13.2022-01-01 15:02:18:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+14.2022-01-01 15:02:19:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 15:28:49:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+2.2022-01-01 15:28:49:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+3.2022-01-01 15:28:49:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+4.2022-01-01 15:28:50:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+5.2022-01-01 15:28:50:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+6.2022-01-01 15:29:03:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+7.2022-01-01 15:29:55:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id_1='2'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+8.2022-01-01 15:29:56:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where type_id='3'   and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+9.2022-01-01 15:29:58:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score,vod_pubdate,
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='31340' LIMIT 1
+10.2022-01-01 15:29:58:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='3' ORDER BY vod_score_all desc LIMIT 6 ;  
+11.2022-01-01 15:29:58:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='3' ORDER BY vod_hits desc LIMIT 8 ;  
+12.2022-01-01 15:30:02:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+13.2022-01-01 15:30:02:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTY0MTAyMjIwMiwiZXhwIjoxNjQxMDI5NDAyfQ.PCG5qRPmLzHhoU4l_YES1cAZ8HNko6OTAZ7RJWnSna4
+14.2022-01-01 15:30:04:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 15:31:11:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+2.2022-01-01 15:36:11:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+3.2022-01-01 15:36:11:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+4.2022-01-01 15:36:12:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+5.2022-01-01 15:36:12:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+6.2022-01-01 15:36:12:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+7.2022-01-01 15:36:14:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+8.2022-01-01 15:40:36:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+    from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC   LIMIT 0,42 
+9.2022-01-01 15:41:00:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+10.2022-01-01 15:41:20:  select type_id,type_name,type_en,type_pid,type_status,
+            type_sort from mac_type order by type_id asc 
+11.2022-01-01 15:41:29:  select type_id,type_name,type_en,type_pid,type_status,
+            type_sort from mac_type order by type_id asc 
+12.2022-01-01 15:41:31:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+13.2022-01-01 15:41:34:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+14.2022-01-01 15:41:37:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,40 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+15.2022-01-01 15:41:43:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+16.2022-01-01 15:41:45:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 30,30 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+17.2022-01-01 15:41:47:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 50,50 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+18.2022-01-01 15:41:50:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+19.2022-01-01 15:41:54:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+20.2022-01-01 15:41:55:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+21.2022-01-01 15:41:57:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+22.2022-01-01 15:41:57:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 100,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+23.2022-01-01 18:23:18:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+24.2022-01-01 18:23:18:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTY0MTAzMjU5OCwiZXhwIjoxNjQxMDM5Nzk4fQ.bt-sKhJ2LKKCCYWiVIOu_rO4raApjoFN_K60xAHen4Q
+25.2022-01-01 18:23:20:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+26.2022-01-01 18:23:21:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+27.2022-01-01 18:23:23:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+28.2022-01-01 18:23:24:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+29.2022-01-01 18:23:24:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+30.2022-01-01 18:23:36:  select * from mac_vod where type_id_1='1'    and 1=1  ORDER BY vod_time_add  DESC  LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'   and 1=1  
+1.2022-01-01 18:26:30:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 18:26:34:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+3.2022-01-01 18:27:15:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+4.2022-01-01 18:27:17:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:39:14:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 18:39:26:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:40:45:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:41:12:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:41:19:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:42:32:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:47:06:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:50:50:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:51:08:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:51:20:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 18:51:33:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:54:28:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 18:54:30:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+3.2022-01-01 18:54:30:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+4.2022-01-01 18:54:44:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:55:36:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 18:56:44:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+2.2022-01-01 18:56:44:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+3.2022-01-01 18:56:44:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+4.2022-01-01 18:56:44:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+5.2022-01-01 18:56:44:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+6.2022-01-01 18:56:46:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score,vod_pubdate,
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='7554' LIMIT 1
+8.2022-01-01 18:56:46:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='7' ORDER BY vod_score_all desc LIMIT 6 ;  
+7.2022-01-01 18:56:46:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='7' ORDER BY vod_hits desc LIMIT 8 ;  
+1.2022-01-01 18:57:15:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 18:57:23:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:01:03:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 19:01:27:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_score,vod_pubdate,
+    vod_en,vod_blurb,vod_content,vod_remarks,vod_hits,vod_time,vod_director,vod_actor,vod_duration,vod_reurl,vod_play_url,vod_play_from
+     from mac_vod where  vod_id='7554' LIMIT 1
+3.2022-01-01 19:01:27:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='7' ORDER BY vod_score_all desc LIMIT 6 ;  
+4.2022-01-01 19:01:27:  select vod_id,vod_name,type_id,type_id_1,vod_pic,vod_year,vod_class,vod_area,vod_lang,vod_score,vod_hits,vod_actor
+    from mac_vod where type_id='7' ORDER BY vod_hits desc LIMIT 8 ;  
+5.2022-01-01 19:01:37:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:02:39:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:12:41:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 19:12:56:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+3.2022-01-01 19:13:32:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+4.2022-01-01 19:14:02:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+5.2022-01-01 19:14:58:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+6.2022-01-01 19:15:22:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+7.2022-01-01 19:16:11:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:17:38:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+2.2022-01-01 19:18:00:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:20:02:  select * from mac_vod where type_id_1='1'   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  type_id_1='1'  and 1=1  
+1.2022-01-01 19:23:37:  select * from mac_vod where    and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where   and 1=1  
+1.2022-01-01 19:24:14:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:33:09:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+2.2022-01-01 19:33:17:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+3.2022-01-01 19:33:30:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:34:06:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:35:58:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:38:44:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:40:47:  select * from mac_vod where 1=1   and 1=1  ORDER BY vod_time_add  DESC LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  and 1=1  
+1.2022-01-01 19:43:23:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  
+2.2022-01-01 19:43:31:  select * from mac_vod where 1=1  undefined LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  1=1 undefined 
+3.2022-01-01 19:43:36:  select * from mac_vod where 1=1  undefined LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  1=1 undefined 
+1.2022-01-01 19:44:07:  select * from mac_vod where 1=1    1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  
+1.2022-01-01 19:45:07:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  
+2.2022-01-01 19:45:10:  select * from mac_vod where 1=1   LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  1=1  
+3.2022-01-01 19:45:13:  select * from mac_vod where 1=1  vod_status = '1' and  LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where  1=1 vod_status = '1' and  
+1.2022-01-01 19:46:20:  select * from mac_vod where   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where  
+1.2022-01-01 19:47:35:  select * from mac_vod where   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+1.2022-01-01 19:48:10:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 19:48:40:  select * from mac_vod where 1=1  vod_area = '中国台湾' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1 vod_area = '中国台湾' and  1=1 
+1.2022-01-01 19:49:30:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 19:49:33:  select * from mac_vod where 1=1   andvod_area = '中国台湾' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  andvod_area = '中国台湾' and  1=1 
+1.2022-01-01 19:49:42:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 19:49:44:  select * from mac_vod where 1=1   and vod_area = '中国台湾' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国台湾' and  1=1 
+3.2022-01-01 19:49:48:  select * from mac_vod where 1=1   and vod_level = '2' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '2' and  1=1 
+4.2022-01-01 19:49:52:  select * from mac_vod where 1=1   and vod_lang = '英语' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_lang = '英语' and  1=1 
+5.2022-01-01 19:49:56:  select * from mac_vod where 1=1   and vod_status = '1' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_status = '1' and  1=1 
+6.2022-01-01 19:50:04:  select * from mac_vod where 1=1   and vod_lock = '1' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_lock = '1' and  1=1 
+7.2022-01-01 19:50:07:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+8.2022-01-01 19:50:11:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+9.2022-01-01 19:50:16:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+10.2022-01-01 19:50:19:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+11.2022-01-01 19:50:30:  select * from mac_vod where 1=1   and  1=1 LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+12.2022-01-01 19:50:34:  select * from mac_vod where 1=1   and vod_area = '中国大陆' and  1=1 LIMIT 60,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国大陆' and  1=1 
+13.2022-01-01 19:50:37:  select * from mac_vod where 1=1   and vod_area = '中国大陆' and  1=1 LIMIT 80,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国大陆' and  1=1 
+14.2022-01-01 19:50:39:  select * from mac_vod where 1=1   and vod_area = '中国大陆' and  1=1 LIMIT 120,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国大陆' and  1=1 
+15.2022-01-01 19:50:43:  select * from mac_vod where 1=1   and vod_area = '中国台湾' and  1=1 LIMIT 120,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国台湾' and  1=1 
+16.2022-01-01 19:50:46:  select * from mac_vod where 1=1   and vod_area = '中国台湾' and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_area = '中国台湾' and  1=1 
+17.2022-01-01 19:51:25:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+18.2022-01-01 19:51:29:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+19.2022-01-01 19:51:30:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+20.2022-01-01 19:51:37:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+21.2022-01-01 19:51:53:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+22.2022-01-01 19:51:55:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+23.2022-01-01 19:52:08:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+1.2022-01-01 19:53:48:  select * from mac_vod where 1=1   LIMIT -20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 19:53:50:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+1.2022-01-01 19:54:25:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 19:54:29:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+3.2022-01-01 19:54:30:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+4.2022-01-01 19:55:42:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+5.2022-01-01 19:55:46:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+6.2022-01-01 19:55:49:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+7.2022-01-01 19:55:53:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+8.2022-01-01 19:56:21:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+9.2022-01-01 19:57:03:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+10.2022-01-01 19:57:32:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+1.2022-01-01 19:58:54:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+2.2022-01-01 19:58:59:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+1.2022-01-01 20:00:41:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+2.2022-01-01 20:00:44:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+3.2022-01-01 20:00:46:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+4.2022-01-01 20:00:46:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+5.2022-01-01 20:00:47:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+6.2022-01-01 20:00:50:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+7.2022-01-01 20:01:36:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+8.2022-01-01 20:01:38:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+9.2022-01-01 20:01:40:  select * from mac_vod where 1=1   and  1=1 LIMIT 20,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+10.2022-01-01 20:01:42:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+11.2022-01-01 20:02:04:  select * from mac_vod where 1=1   and vod_name LIKE '%传奇故事%' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_name LIKE '%传奇故事%' and  1=1 
+12.2022-01-01 20:02:07:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 

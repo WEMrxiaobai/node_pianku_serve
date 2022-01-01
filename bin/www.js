@@ -50,3 +50,8 @@ function getIPAdress() {
 // console.log("本机ip地址",getIPAdress());
 let diZhi="http://"+getIPAdress()+":"+PORT;
 console.log("访问:",diZhi);
+
+// 初始化分类
+const init=require('../src/model/initdbtype');
+
+
