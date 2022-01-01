@@ -1,11 +1,11 @@
-const fs = require('fs')
-const path = require('path')
-// const imgBaseUrl='G:/phpstudy_pro/WWW/maccms/';
-const {imgBaseUrl} =require('../config/config')
+const fs = require('fs');
+const path = require('path');
+const {WEB_CONFIG} =require('../config/config');
+
 function getImages(pathUrl) {
     // console.log('getImages:', pathUrl);
     return new Promise((resolve, reject) => {
-        fs.readFile(path.join(imgBaseUrl,pathUrl), (err, data) => {
+        fs.readFile(path.join(WEB_CONFIG.imgBaseUrl,pathUrl), (err, data) => {
             // console.log("data   imgBaseUrl",path.join(imgBaseUrl,pathUrl));
             if(err){
                return reject(err);
@@ -19,6 +19,5 @@ function getImages(pathUrl) {
     })
 
 }
-
 
 module.exports = { getImages }

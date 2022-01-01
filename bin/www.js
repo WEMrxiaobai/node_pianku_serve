@@ -47,6 +47,6 @@ function getIPAdress() {
         }　　
     }
 }
-console.log("本机ip地址",getIPAdress());
+// console.log("本机ip地址",getIPAdress());
 let diZhi="http://"+getIPAdress()+":"+PORT;
 console.log("访问:",diZhi);
