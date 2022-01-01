@@ -82,8 +82,8 @@ const getIndexAC = (page) => {
 // 电影页
 const getMv = (showNum, page, val) => {
     let startPage = showNum * page;
-    let endPage = startPage + showNum;
-    // console.log("startPage",startPage,"---endPage",endPage);
+    // let endPage = startPage + showNum;   limit 参数，第一个参数：从startPage开始查 ； 第二个参数：查showNum条
+    // console.log("startPage",startPage,"---endPage",endPage,showNum);
     let countSql = `SELECT COUNT(*) as total from mac_vod where  type_id_1='1' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
@@ -91,7 +91,7 @@ const getMv = (showNum, page, val) => {
     sql += ` ${sqltype(val)} `;
     countSql+=` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
-    sql += ` LIMIT ${startPage},${endPage} `;
+    sql += ` LIMIT ${startPage},${showNum} `;
     // console.log("getMv--sql:", sql);
     log(sql)
     const callback = Promise.all([execSQL(sql), execSQL(countSql)])
@@ -101,14 +101,14 @@ const getMv = (showNum, page, val) => {
 // 电视剧页
 const getTv = (showNum, page, val) => {
     let startPage = showNum * page;
-    let endPage = startPage + showNum;
+    // let endPage = startPage + showNum;
     let countSql = `SELECT COUNT(*) as total from mac_vod where type_id_1='2' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where type_id_1='2' `;
     sql += ` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
-    sql += ` LIMIT ${startPage},${endPage} `;
+    sql += ` LIMIT ${startPage},${showNum} `;
     // console.log("getList--sql:",sql);
     log(sql)
     const callback = Promise.all([execSQL(sql), execSQL(countSql)])
@@ -118,14 +118,14 @@ const getTv = (showNum, page, val) => {
 // 综艺
 const getVa = (showNum, page, val) => {
     let startPage = showNum * page;
-    let endPage = startPage + showNum;
+    // let endPage = startPage + showNum;
     let countSql = `SELECT COUNT(*) as total from mac_vod where type_id='3' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where type_id='3' `;
     sql += ` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
-    sql += ` LIMIT ${startPage},${endPage} `;
+    sql += ` LIMIT ${startPage},${showNum} `;
     // console.log("getList--sql:",sql);
     log(sql)
     const callback = Promise.all([execSQL(sql), execSQL(countSql)])
@@ -135,14 +135,14 @@ const getVa = (showNum, page, val) => {
 // 动漫
 const getAc = (showNum, page, val) => {
     let startPage = showNum * page;
-    let endPage = startPage + showNum;
+    // let endPage = startPage + showNum;
     let countSql = `SELECT COUNT(*) as total from mac_vod where  type_id='4' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
      vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
      from mac_vod where type_id='4' `;
     sql += ` ${sqltype(val)} `;
     sql += `ORDER BY ${sqlPaixu(val)} DESC  `;
-    sql += ` LIMIT ${startPage},${endPage} `;
+    sql += ` LIMIT ${startPage},${showNum} `;
     // console.log("getList--sql:",sql);
     log(sql)
     log(countSql)
@@ -153,7 +153,7 @@ const getAc = (showNum, page, val) => {
 // 纪录片
 const getDoc = (showNum, page, val) => {
     let startPage = showNum * page;
-    let endPage = startPage + showNum;
+    // let endPage = startPage + showNum;
     let countSql = `SELECT COUNT(*) as total from mac_vod where  type_id='27' `;
     let sql = `select vod_id,vod_name,vod_pic,vod_year,
     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
@@ -161,7 +161,7 @@ const getDoc = (showNum, page, val) => {
     // console.log("getList--sql:",sql);
     sql += ` ${sqltype(val)} `;
     sql += ` ORDER BY ${sqlPaixu(val)} DESC `;
-    sql += ` LIMIT ${startPage},${endPage} `;
+    sql += ` LIMIT ${startPage},${showNum} `;
     log(sql)
     const callback = Promise.all([execSQL(sql), execSQL(countSql)]);
     return callback;

@@ -120,22 +120,22 @@ const adminVideo=(data)=>{
     let countSql='';
     if(tkor){ //token判断
         // console.log("视频管理",tkor);
-        console.log("视频管理:",data);
+        // console.log("视频管理:",data);
         let showNum = data.showNum  ||  20;
-        let page= data.page  ||  1;;
+        let page= data.page  ||  0;;
         let val=['全部', '全部', '全部', '全部', 'time'];
         try {
         if(data.method=='get'){
             // 查询
             let startPage = showNum * page;
-            let endPage = startPage + showNum;
+            // let endPage = startPage + showNum;
             countSql = `SELECT COUNT(*) as total from mac_vod where  type_id_1='1' `;
             sqlVideo = `select *
             from mac_vod where type_id_1='1'  `;
             sqlVideo += ` ${sqltype(val)} `;
             countSql+=` ${sqltype(val)} `;
             sqlVideo += `ORDER BY ${sqlPaixu(val)} DESC `;
-            sqlVideo += ` LIMIT ${startPage},${endPage} `;
+            sqlVideo += ` LIMIT ${startPage},${showNum} `;
             
         }else if(data.method=='upt'){
             // 更新

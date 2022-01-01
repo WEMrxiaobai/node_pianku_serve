@@ -1,12 +1,12 @@
 const jwt = require('jsonwebtoken')
-const {secretKey,DesTime} =require('../config/config')
+const {WEB_CONFIG} =require('../config/config')
 const { log } =require('../model/Log')
 //生成token   uid用户  scope 等级
 function generateToken(uid, scope) {
     const token=jwt.sign(
         {uid,scope},
-        secretKey,
-        {expiresIn:DesTime}
+        WEB_CONFIG.secretKey,
+        {expiresIn:WEB_CONFIG.DesTime}
     )
     // log("uid:"+uid,"scope:",scope,"token:",token)
     return token    
@@ -14,7 +14,7 @@ function generateToken(uid, scope) {
 //验证token
 function verifyToken(token){
     try{
-        return jwt.verify(token,secretKey)
+        return jwt.verify(token,WEB_CONFIG.secretKey)
     }catch(e){
         return false
     }
