@@ -156,6 +156,7 @@ const adminVideo = (data) => {
 
             } else if (data.method == 'del') {
                 // 删除
+                
                 sqlVideo = ` DELETE FROM mac_type WHERE type_id = ${data.edit.type_id} `;
             }
         } catch (error) {

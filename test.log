@@ -999,3 +999,71 @@
 10.2022-01-01 20:01:42:  select * from mac_vod where 1=1   and  1=1 LIMIT 40,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
 11.2022-01-01 20:02:04:  select * from mac_vod where 1=1   and vod_name LIKE '%传奇故事%' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_name LIKE '%传奇故事%' and  1=1 
 12.2022-01-01 20:02:07:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+1.2022-01-01 21:30:49:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+2.2022-01-01 21:30:49:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+3.2022-01-01 21:30:49:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+4.2022-01-01 21:30:49:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+5.2022-01-01 21:30:50:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+6.2022-01-01 21:30:54:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+7.2022-01-01 21:30:54:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTY0MTA0Mzg1NCwiZXhwIjoxNjQxMDUxMDU0fQ.HBKSi3owRCR894T2B6rqv-SWXTOGetUYTgvIiGJhQ4g
+8.2022-01-01 21:30:55:  select type_id,type_name,type_en,type_pid,type_status,
+            type_sort from mac_type order by type_id asc 
+9.2022-01-01 21:30:57:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+10.2022-01-01 21:31:00:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+11.2022-01-01 21:32:00:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+12.2022-01-01 21:32:01:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+13.2022-01-01 21:32:09:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+1.2022-01-02 08:55:32:  select vod_id,vod_name,vod_pic,vod_year,vod_blurb,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1' ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC LIMIT 6
+2.2022-01-02 08:55:32:  select vod_id,vod_name,vod_pic,vod_year,
+    vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='1'  ORDER BY vod_level DESC ,vod_hits DESC,vod_time DESC  LIMIT 14
+3.2022-01-02 08:55:34:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id_1='2'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+4.2022-01-02 08:55:34:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='3'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+5.2022-01-02 08:55:34:  select vod_id,vod_name,vod_pic,vod_year,
+     vod_class,vod_area,vod_lang,vod_score,vod_remarks,vod_hits
+     from mac_vod where 1=1  and type_id='4'  ORDER BY mac_vod.vod_time DESC  LIMIT 14
+6.2022-01-02 08:55:41:  select * from mac_admin where admin_name='xiaobai' and admin_pwd='4297f44b13955235245b2497399d7a93' 
+7.2022-01-02 08:55:41:  xiaobai,:,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ4aWFvYmFpIiwic2NvcGUiOjEsImlhdCI6MTY0MTA4NDk0MSwiZXhwIjoxNjQxMDkyMTQxfQ.Pzp0pPBjFba-b1pvdMeimKKKzVgpyqhctL5MPkFA3bw
+8.2022-01-02 08:55:43:  select type_id,type_name,type_en,type_pid,type_status,
+            type_sort from mac_type order by type_id asc 
+9.2022-01-02 08:55:45:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+10.2022-01-02 08:55:49:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+11.2022-01-02 08:55:51:  select * from mac_vod where 1=1   and vod_isend = '' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_isend = '' and  1=1 
+12.2022-01-02 08:55:54:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+13.2022-01-02 08:55:57:  select * from mac_vod where 1=1   and vod_isend = '1' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_isend = '1' and  1=1 
+14.2022-01-02 08:56:00:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+15.2022-01-02 08:56:05:  select * from mac_vod where 1=1   and vod_lang = '闽南语' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_lang = '闽南语' and  1=1 
+16.2022-01-02 08:56:10:  select * from mac_vod where 1=1   and vod_lang = '英语' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_lang = '英语' and  1=1 
+17.2022-01-02 08:56:13:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+18.2022-01-02 09:00:07:  select * from mac_vod where 1=1   and vod_level = '5' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '5' and  1=1 
+19.2022-01-02 09:00:11:  select * from mac_vod where 1=1   and vod_level = '2' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '2' and  1=1 
+20.2022-01-02 09:00:13:  select * from mac_vod where 1=1   and vod_level = '5' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '5' and  1=1 
+21.2022-01-02 09:00:15:  select * from mac_vod where 1=1   and vod_level = '6' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '6' and  1=1 
+22.2022-01-02 09:00:17:  select * from mac_vod where 1=1   and vod_level = '7' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '7' and  1=1 
+23.2022-01-02 09:00:19:  select * from mac_vod where 1=1   and vod_level = '8' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '8' and  1=1 
+24.2022-01-02 09:00:22:  select * from mac_vod where 1=1   and vod_level = '9' and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and vod_level = '9' and  1=1 
+25.2022-01-02 09:00:24:  select * from mac_vod where 1=1   and  1=1 LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  and  1=1 
+26.2022-01-02 09:05:49:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+27.2022-01-02 09:06:01:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+28.2022-01-02 09:08:16:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+29.2022-01-02 09:12:25:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+30.2022-01-02 09:15:04:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+31.2022-01-02 09:15:06:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+32.2022-01-02 09:16:09:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
+33.2022-01-02 09:26:47:  select * from mac_vod where 1=1   LIMIT 0,20 ,SELECT COUNT(*) as total from mac_vod where 1=1  
