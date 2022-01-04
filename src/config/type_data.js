@@ -215,7 +215,8 @@
 		"type_status": 1,
 		"type_sort": 15
 	}
-]
+];
+
 module.exports = {
     type_data
 } 

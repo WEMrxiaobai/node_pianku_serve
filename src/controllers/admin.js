@@ -3,7 +3,7 @@ const { execSQL } = require('../db/mysql');
 const { log } = require('../model/Log');
 const md5 = require("md5");
 const { generateToken, verifyToken } = require('../model/Tonken')
-const { sqlPaixu, sqltype } = require('./video')
+const { initInsert } =require('../config/initInsert')
 //admin登录
 const adminLogin = (body) => {
     let username = body.name;
@@ -118,7 +118,8 @@ const adminVideo = (data) => {
     let tkor = tokenIS(data.token);
     let sqlVideo = '';
     let countSql = '';
-    let videoTypeVal=''
+    let videoTypeVal='';
+    let callback ='';
     if (tkor) { //token判断
         // console.log("视频管理",tkor);
         // console.log("视频管理:",data);
@@ -127,10 +128,10 @@ const adminVideo = (data) => {
         if (data.type) {
             videoTypeVal= VideoType(data.type);
         }
-
         let showNum = data.showNum || 20;
         let page = data.page || 0;
         try {
+            let newtoken = { "token": generateToken(tkor.uid, tkor.scope) }
             if (data.method == 'get') {
                 // 起始位置 页码
                 let startPage = showNum * page;
@@ -141,38 +142,32 @@ const adminVideo = (data) => {
                 sqlVideo = `select * from mac_vod where 1=1 `;
                 sqlVideo += ` ${videoTypeVal} `;
                 sqlVideo += `LIMIT ${startPage},${showNum} `;
-
+                callback = Promise.all([execSQL(sqlVideo), newtoken, execSQL(countSql)]);
             } else if (data.method == 'upt') {
                 // 更新
-                sqlVideo = `UPDATE mac_type SET type_name = '${data.edit.type_name}' ,type_pid = '${data.edit.type_pid}',
-                type_en = '${data.edit.type_en}' , type_sort = '${data.edit.type_sort}', type_status = '${data.edit.type_status}'
-                WHERE type_id = ${data.edit.type_id} ;`
+                sqlVideo = `UPDATE mac_vod SET ${sqlUpt(data.edit)} WHERE vod_id = '${data.edit.vod_id}';`
 
+                callback = Promise.all([execSQL(sqlVideo), newtoken]);
             } else if (data.method == 'add') {
                 // 添加
-                sqlVideo = ` INSERT INTO mac_type (type_id, type_name, type_en, type_sort, type_mid, type_pid, type_status) 
-            VALUES (NULL, '${data.edit.type_name}', '${data.edit.type_en}', '${data.edit.type_sort}', '1',
-             '${data.edit.type_pid}', '${data.edit.type_status}'); `;
+                sqlVideo = ` INSERT INTO mac_vod ${sqlAdd(data.edit)} `;
 
+                callback = Promise.all([execSQL(sqlVideo), newtoken]);
             } else if (data.method == 'del') {
                 // 删除
-                
-                sqlVideo = ` DELETE FROM mac_type WHERE type_id = ${data.edit.type_id} `;
+                sqlVideo = ` DELETE FROM mac_vod WHERE vod_id = '${data.edit}' `;
+                callback = Promise.all([execSQL(sqlVideo), newtoken]);
             }
         } catch (error) {
             console.log(error, new Date(), '分类');
         }
 
-        log(sqlVideo, countSql)
-        let newtoken = { "token": generateToken(tkor.uid, tkor.scope) }
-        const callback = Promise.all([execSQL(sqlVideo), newtoken, execSQL(countSql)])
+        log(sqlVideo)
         return callback;
     } else {
         console.log("视频管理error");
         return Promise.all([{ 'error': -1, 'code': 10099, 'msg': 'token失效' }])
     }
-
-
 }
 
 
@@ -227,10 +222,11 @@ function VideoType(value) {
         sql +=` 1=1`
         if (val.sortValue) {
             let paixu = 'vod_id';
-            if (val.sortValue == "id") { paixu = ` vod_id `; }
-            if (val.sortValue == "hits") { paixu = `vod_hits `; }
-            if (val.sortValue == "time") { paixu = `vod_time_add `; }
-            sql += ` ORDER BY '${paixu}' DESC `;  //排序  
+            if (val.sortValue == "id") { paixu = `vod_id`; }
+            if (val.sortValue == "hits") { paixu = `vod_hits`; }
+            if (val.sortValue == "time") { paixu = `vod_time_add`; }
+            sql += ` ORDER BY ${paixu} DESC `;  //排序  
+            console.log(sql);
         }
 
     } catch (error) {
@@ -255,6 +251,45 @@ function VideoType(value) {
     // console.log("sql:", sql);
     return sql;
 }
+
+function sqlUpt(val){
+   let sql='';
+   console.log(val);
+   for (let key in val) {
+       if(key=='vod_id'){continue;}
+       if(val[key]===''){continue;}
+       sql+=`${key} = '${val[key]}',`
+   }
+   return sql.substr(0, sql.length - 1);
+}
+
+function sqlAdd(val){
+    let sqlInit=initInsert;
+    let sql_key='';
+    let sql_value='';
+    for (let key in sqlInit) {
+       
+        if(key=='vod_id'){
+            continue;
+        
+        }else{
+            sql_key+=`${key},`;
+            if(val[key]){
+                sql_value+=`'${val[key]}',`;
+            }else{
+                sql_value+=`'${sqlInit[key]}',`;
+            } 
+        }
+        // if(val[key]!=''){
+        //     sqlInit[key]=val[key];
+        //     sql_key+=`${key},`;
+        //     sql_value+=`'${val[key]}',`;
+    }
+    sql_key=`(${sql_key.substr(0, sql_key.length - 1)}) `;
+    sql_value=` VALUES(${sql_value.substr(0, sql_value.length - 1)});`;
+    console.log('sql_key+sql_value:',sql_key+sql_value);
+    return sql_key+sql_value;
+ }
 
 module.exports = {
     adminLogin, tokenIS, adminIndex,
