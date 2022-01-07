@@ -169,7 +169,48 @@ const adminVideo = (data) => {
         return Promise.all([{ 'error': -1, 'code': 10099, 'msg': 'token失效' }])
     }
 }
+// 接口列表
+const adminApiList=(data)=>{
+    let tkor = tokenIS(data.token);
+    let sqlApiList = '';
+    if (tkor) { //token判断
+        // console.log("接口列表",tkor);
+        console.log("接口列表post:");
+        try {
+            if (data.method == 'get') {
+                // 查询
+                if(data.search){
+                    sqlApiList = `SELECT * FROM video_api WHERE api_name LIKE '%${data.search}%';`;
+                    // SELECT * FROM `video_api` WHERE `api_name` LIKE '%OK%'
+                }else{
+                    sqlApiList = `SELECT * FROM video_api;`;
+                }
+            } else if (data.method == 'upt') {
+                // 更新
+                console.log('---data',data);
+                sqlApiList = `UPDATE video_api SET api_name = '${data.edit.api_name}',api_url = '${data.edit.api_url}' WHERE id = ${data.edit.id} ;`
 
+            } else if (data.method == 'add') {
+                // 添加
+                sqlApiList = `INSERT INTO video_api (api_name, api_url) VALUES ('${data.edit.api_name}', '${data.edit.api_url}'); `;
+
+            } else if (data.method == 'del') {
+                // 删除
+                sqlApiList = ` DELETE FROM video_api WHERE id = ${data.edit.id} `;
+            }
+        } catch (error) {
+            console.log(error, new Date(), '接口列表');
+        }
+
+        log(sqlApiList)
+        let newtoken = { "token": generateToken(tkor.uid, tkor.scope) }
+        const callback = Promise.all([execSQL(sqlApiList), newtoken])
+        return callback;
+    } else {
+        console.log("接口列表err");
+        return Promise.all([{ 'error': -1, 'code': 10099, 'msg': 'token失效' }])
+    }
+}
 
 const tokenIS = (token) => {
     let verify = verifyToken(token);
@@ -232,22 +273,6 @@ function VideoType(value) {
     } catch (error) {
         console.log('VideoType', error);
     }
-    //vod_isend 完结
-    // let a = {
-    //     inputValue: '阿萨德',
-    //     typeValue: 3,
-    //     typeOptions: '',
-    //     tuijianValue: 2,
-    //     statusValue: 1,
-    //     areaValue: '中国香港',
-    //     langValue: '国语',
-    //     sortValue: 'time',
-    //     lockValue: 1,
-    //     auditValue: 0,
-    //     imgValue: 1,
-    //     playerUrlValue: ''
-    // }
-
     // console.log("sql:", sql);
     return sql;
 }
@@ -293,6 +318,6 @@ function sqlAdd(val){
 
 module.exports = {
     adminLogin, tokenIS, adminIndex,
-    adminCategory, adminVideo,
+    adminCategory, adminVideo,adminApiList,
     _ip2int, _int2iP
 }

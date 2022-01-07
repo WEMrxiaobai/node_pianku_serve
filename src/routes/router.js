@@ -2,7 +2,7 @@
 const { SuccessModel, ErrorModel } = require('../model/responseModel');
 const { getIndexMv, getIndexTv, getIndexVa, getIndexAC, getMv, getBanner,
     getTv, getVa, getAc, getDoc, getID, getHot, getAbout, getPlayerVideo } = require('../controllers/video');
-const { adminLogin, tokenIS,adminCategory,adminVideo,adminIndex } = require('../controllers/admin');
+const { adminLogin, tokenIS,adminCategory,adminVideo,adminIndex, adminApiList } = require('../controllers/admin');
 const { Urlreg } = require('../model/Urlreg');
 const { getImages } =require('../model/UrlImages')
 const handleRoute = (req, res) => {
@@ -247,6 +247,17 @@ const handleRoute = (req, res) => {
     // admin adminCategory 分类管理
     if (method === 'POST' && req.path === '/admin/category') {
         const adminCategoryPromise = adminCategory(req.body);
+        return adminCategoryPromise.then((data) => {
+            if (data) {
+                return new SuccessModel(data);
+            } else {
+                return new ErrorModel(data);
+            }
+        })
+    }
+    // admin api管理
+    if (method === 'POST' && req.path === '/admin/apilist') {
+        const adminCategoryPromise = adminApiList(req.body);
         return adminCategoryPromise.then((data) => {
             if (data) {
                 return new SuccessModel(data);
