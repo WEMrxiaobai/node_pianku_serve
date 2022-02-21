@@ -7,7 +7,7 @@ WEB_CONFIG={
   
    imgBaseUrl:'G:/phpstudy_pro/WWW/maccms/', // 网站upload地址
    
-   ipPort:'http://192.168.1.108:5200/',
+   ipPort:'http://10.101.0.191:5200/',
 }
 
 module.exports={

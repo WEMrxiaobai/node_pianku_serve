@@ -8,9 +8,9 @@ connection.connect();
 
 function Re_connection() {
     // 重新连接
-    console.log("执行 连接检查" ,new Date());
+    console.log("执行 连接检查", new Date());
     connection.on('error', err => {
-        console.log("重连mysql:re_connecting lost connection" ,new Date());
+        console.log("重连mysql:re_connecting lost connection", new Date());
         connection = mysql.createConnection(MYSQL_CONFIG);
         setTimeout(() => {
             Re_connection()
@@ -18,7 +18,6 @@ function Re_connection() {
     })
 }
 Re_connection();
-
 
 let errMsg = '';
 
